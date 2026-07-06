@@ -1,0 +1,21 @@
+site_name: Sovereign Codex
+site_description: Verified technical documentation for Black Desert Online.
+site_author: Ash Saron
+
+theme:
+  name: material
+  palette:
+
+    - scheme: slate
+      primary: indigo
+      accent: cyan
+      
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
