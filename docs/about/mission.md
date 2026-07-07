@@ -1,3 +1,1 @@
-# Sovereign Codex
-
 Transform information into trusted knowledge through governance, structure, and intelligent tools.
