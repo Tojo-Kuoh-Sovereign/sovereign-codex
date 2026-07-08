@@ -49,5 +49,6 @@ markdown_extensions:
 
 plugins:
   - search
-  extra_css:
+
+extra_css:
   - assets/stylesheets/extra.css
