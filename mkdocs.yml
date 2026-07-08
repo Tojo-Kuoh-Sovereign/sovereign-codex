@@ -51,4 +51,4 @@ plugins:
   - search
 
 extra_css:
-  - governance/design/stylesheets/extra.css
+  - about/governance/design/stylesheets/extra.css
