@@ -1,36 +1,30 @@
-# About Sovereign Codex
-
-Welcome to the Sovereign Codex.
-
-Sovereign Codex is an ongoing community knowledge base for **Black Desert Online**, designed to provide structured, searchable, and continuously maintained documentation.
-
-The project was created with a simple goal:
-
-> Build a trusted source of information that is easy to navigate, easy to reference, and continually improved over time.
-
-Unlike a traditional wiki, Sovereign Codex focuses on carefully organised and verified documentation. Content is developed using documented standards and governance to ensure consistency as the project grows.
-
-Whether you're looking for information on ocean content, game systems, progression, or future additions, the aim is to make finding reliable information as straightforward as possible.
-
----
-
 ## Project Structure
 
-The documentation is organised into several key areas:
+The Sovereign Codex is organised into eight core disciplines, each serving a distinct role within the documentation ecosystem.
 
-- **About** — Information about the project and its purpose.
-- **Governance** — How the project is managed and maintained.
-- **Standards** — Documentation standards and writing guidelines.
-- **Knowledge** — Verified documentation and technical guides.
-- **Research** — Information currently being investigated or validated.
-- **Roadmap** — Development plans, milestones, and upcoming features.
+### About
+Project vision, architecture, contributor information, and the principles behind the Codex.
 
----
+### Design
+Visual identity, design system, reusable components, and brand standards.
 
-## An Ongoing Project
+### Governance
+Project governance, decision-making, policies, and long-term stewardship.
 
-Sovereign Codex is continuously evolving.
+### Knowledge
+Verified documentation, technical references, and published guides.
 
-As Black Desert Online changes, the documentation will continue to grow, improve, and be refined over time.
+### Quality
+Quality assurance, review processes, validation, and continuous improvement.
 
-Feedback, corrections, and contributions are always welcome.
+### Research
+Ideas, investigations, prototypes, and information awaiting verification.
+
+### Roadmap
+Future milestones, planned features, strategic initiatives, and project direction.
+
+### Standards
+Writing standards, formatting conventions, naming rules, and documentation policies.
+
+### Tools
+Developer utilities, templates, testing resources, and internal tooling that supports the Codex.
