@@ -289,3 +289,20 @@ That fits perfectly with the architecture we've built. Someone should visit Sove
 If the design communicates that before they've read a single article, then we've succeeded.
 
 And I have to say... this is one of the most enjoyable design exercises I've been part of. We're not choosing colours because they look nice—we're choosing them because they reinforce the identity of the platform. That's exactly how enduring brands are built.
+
+
+Stewardship
+
+Leave things better than you found them.
+
+Clarity
+
+Make complexity understandable.
+
+Structure
+
+Build foundations before features.
+
+Trust
+
+Confidence comes from process, not presentation.

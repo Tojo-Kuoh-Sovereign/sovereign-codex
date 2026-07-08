@@ -10,3 +10,6 @@
 
 ```python
 print("Hello World")
+```
+
+Press ++ctrl+c++ to copy.

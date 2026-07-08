@@ -1,0 +1,48 @@
+/*
+==================================================
+
+SOVEREIGN CODEX DESIGN SYSTEM
+
+Purpose:
+Custom theme overrides for Material for MkDocs.
+
+Principles:
+
+- Quiet confidence
+- Material inspired
+- Premium engineering
+- Accessibility first
+- Content over decoration
+
+==================================================
+*/
+
+:root {
+
+}
+
+.md-header {
+
+    border-bottom: 1px solid #8f7653;
+
+}
+
+:root {
+
+    /*
+    ========================================
+    Material Language
+    ========================================
+    */
+
+    --codex-obsidian: #18191c;
+
+    --codex-steel: #5c646d;
+
+    --codex-bronze: #8f7653;
+
+    --codex-sapphire: #4f79a8;
+
+    --codex-parchment: #ece6d8;
+
+}

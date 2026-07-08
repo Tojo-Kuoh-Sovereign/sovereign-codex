@@ -1,23 +1,53 @@
 site_name: Sovereign Codex
 site_url: https://tojo-kuoh-sovereign.github.io/sovereign-codex/
+site_description: Trusted knowledge through governance, structure, and intelligent tools.
+site_author: Tojo Kuoh
 use_directory_urls: true
-site_description: Trusted knowledge through governance, structure and intelligent tools.
-site_author: Ash Saron
 
 theme:
   name: material
 
-palette:
-  - scheme: slate
-    primary: indigo
-    accent: cyan
+  language: en
 
-features:
-  - navigation.tabs
-  - navigation.sections
-  - navigation.expand
-  - navigation.top
-  - navigation.indexes
-  - toc.follow
-  - search.suggest
-  - search.highlight
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: cyan
+
+  features:
+    # Navigation
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - navigation.tracking
+
+    # Table of Contents
+    - toc.follow
+
+    # Search
+    - search.suggest
+    - search.highlight
+
+    # Content
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
+  extra_css:
+  - assets/stylesheets/extra.css
