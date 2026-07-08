@@ -1,52 +1,341 @@
-/*
-==========================================================
-SOVEREIGN CODEX DESIGN SYSTEM
-==========================================================
-Purpose:
-Custom theme overrides for Material for MkDocs.
-
-Principles:
-- Quiet confidence
-- Material inspired
-- Premium engineering
-- Accessibility first
-- Content over decoration
-==========================================================
-*/
-
-
-/* ==========================================================
-   COLOUR SYSTEM
-========================================================== */
-
 :root {
+
+    /* ======================================================
+       FOUNDATION
+    ====================================================== */
+
+    /* Obsidian */
+
+    --obsidian: #1b1d24;
+    --obsidian-light: #252833;
+
+    /* Steel */
+
+    --steel: #4f5562;
+    --steel-light: #717887;
+
+    /* Bronze */
+
+    --bronze: #8f7653;
+    --bronze-light: #b59873;
+
+    /* Sapphire */
+
+    --sapphire: #3f6fb4;
+    --sapphire-light: #5f93dd;
+
+    /* Paper */
+
+    --paper: #e7dfd2;
+
+    /* ======================================================
+       SEMANTIC TOKENS
+    ====================================================== */
+
+    /* Surfaces */
+
+    --surface-primary: var(--obsidian);
+    --surface-secondary: var(--obsidian-light);
+    --surface-tertiary: rgba(255,255,255,.03);
+
+    /* Typography */
+
+    --text-primary: var(--paper);
+    --text-secondary: var(--steel-light);
+
+    --heading-primary: var(--paper);
+    --heading-accent: var(--bronze);
+
+    /* Borders */
+
+    --border-subtle: rgba(143,118,83,.18);
+    --border-strong: rgba(143,118,83,.35);
+
+    /* Component Tokens */
+
+    --callout-bg: var(--surface-primary);
+    --callout-header-bg: rgba(143,118,83,.08);
+    --callout-border: var(--border-subtle);
+    --callout-title: var(--heading-accent);
+
+    --card-bg: var(--surface-primary);
+    --card-border: var(--border-subtle);
+
+    --panel-bg: var(--surface-secondary);
+
+    /* Interaction */
+
+    --interactive: var(--sapphire);
+    --interactive-hover: var(--bronze-light);
+    --interactive-active: var(--bronze);
+
+    /* Effects */
+
+    --shadow-small: 0 2px 8px rgba(0,0,0,.15);
+    --shadow-medium: 0 8px 24px rgba(0,0,0,.20);
+    --shadow-large: 0 18px 48px rgba(0,0,0,.35);
+
+    /* Radii */
+
+    --radius-small: 4px;
+    --radius-medium: 8px;
+    --radius-large: 16px;
 
 }
 
+/* ==========================================================
+   TYPOGRAPHY
+-------------------------------------------------------------
+Purpose:
+Document hierarchy and readable content.
+========================================================== */
+
+.md-typeset h1 {
+
+    color: var(--heading-primary);
+
+    font-weight: 300;
+
+    letter-spacing: .04em;
+
+}
+
+.md-typeset h2 {
+
+    color: var(--heading-accent);
+
+    font-weight: 500;
+
+    letter-spacing: .02em;
+
+}
+
+.md-typeset {
+
+    color: var(--text-primary);
+
+}
+
+.md-typeset p,
+.md-typeset li {
+
+    color: var(--text-primary);
+
+}
+
+.md-typeset a {
+
+    color: var(--interactive);
+
+    transition: color 180ms ease;
+
+}
+
+.md-typeset a:hover {
+
+    color: var(--interactive-hover);
+
+}
 
 /* ==========================================================
    HEADER
+-------------------------------------------------------------
+Purpose:
+Primary application header.
 ========================================================== */
 
 .md-header {
-    background: #2f3f88;
-    border-bottom: 1px solid #8f7653;
-    box-shadow: 0 1px 8px rgba(0,0,0,.25);
-}
 
+    background: var(--interactive);
+
+    border-bottom: 1px solid var(--border-subtle);
+
+    box-shadow: var(--shadow-small);
+
+}
 
 /* ==========================================================
    NAVIGATION
+-------------------------------------------------------------
+Purpose:
+Primary section navigation.
 ========================================================== */
 
 .md-tabs {
-    background: #34479b;
+
+    background: var(--interactive);
+
 }
 
 .md-tabs__link {
+
     transition: color 180ms ease;
+
 }
 
 .md-tabs__link:hover {
-    color: #d8c2a1;
+
+    color: var(--interactive-hover);
+
+}
+
+/* ==========================================================
+   SIDEBAR
+-------------------------------------------------------------
+Purpose:
+Primary navigation and document discovery.
+========================================================== */
+
+.md-sidebar {
+
+    border-right: 1px solid var(--border-subtle);
+
+}
+
+.md-nav__link {
+
+    transition: all 180ms ease;
+
+}
+
+.md-nav__link:hover {
+
+    color: var(--interactive-hover);
+
+}
+
+.md-nav__link--active {
+
+    color: var(--text-primary);
+
+    font-weight: 500;
+
+}
+
+.md-nav__title {
+
+    color: var(--text-secondary);
+
+    letter-spacing: .04em;
+
+    text-transform: uppercase;
+
+    font-size: .68rem;
+
+}
+
+/* ==========================================================
+   SCROLLBARS
+-------------------------------------------------------------
+Purpose:
+Global scrollbar styling and Material sidebar overrides.
+========================================================== */
+
+/* Global */
+
+* {
+
+    scrollbar-width: thin;
+
+    scrollbar-color: var(--steel) transparent;
+
+}
+
+::-webkit-scrollbar {
+
+    width: 10px;
+
+    height: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+
+    background: transparent;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: var(--steel);
+
+    border-radius: 999px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: var(--bronze);
+
+}
+
+/* Sidebar Override */
+
+.md-sidebar__scrollwrap:hover,
+.md-sidebar__scrollwrap:focus-within {
+
+    scrollbar-color: var(--steel) transparent;
+
+}
+
+/* ==========================================================
+   DIVIDER
+========================================================== */
+
+.md-typeset hr {
+
+    border: none;
+
+    height: 1px;
+
+    background: linear-gradient(
+
+        to right,
+
+        transparent,
+
+        var(--heading-accent),
+
+        transparent
+
+    );
+
+    margin: 3rem 0;
+
+    opacity: .45;
+
+}
+
+/* ==========================================================
+   CALLOUTS
+========================================================== */
+
+.md-typeset .admonition,
+.md-typeset details {
+
+    background: var(--callout-bg);
+
+    border: 1px solid var(--callout-border);
+
+    border-radius: var(--radius-medium);
+
+    box-shadow: var(--shadow-medium);
+
+    overflow: hidden;
+
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+
+    background: var(--callout-header-bg);
+
+    border-bottom: 1px solid var(--callout-border);
+
+    color: var(--callout-title);
+
+    font-weight: 600;
+
+    letter-spacing: .04em;
+
 }
