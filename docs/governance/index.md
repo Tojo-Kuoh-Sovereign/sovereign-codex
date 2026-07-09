@@ -10,15 +10,14 @@ Rather than governing the content itself, these documents govern the processes u
 
 ## Scope
 
-The Governance framework establishes:
+The Governance framework defines:
 
-- The guiding principles of the project.
-- The architecture and organisation of the documentation.
-- The evidence model used to support published information.
-- The review process for approving and maintaining documentation.
-- The long-term governance vision for the project.
+- The principles that guide project decisions.
+- The processes used to create and maintain documentation.
+- The review workflow for publishing trusted knowledge.
+- The long-term governance direction of the project.
 
-Together, these documents provide a consistent framework for maintaining the quality and integrity of Sovereign Codex.
+Together, these documents provide the framework that supports the quality, consistency, and sustainability of Sovereign Codex.
 
 ---
 

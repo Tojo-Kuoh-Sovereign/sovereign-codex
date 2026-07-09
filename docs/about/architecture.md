@@ -6,15 +6,14 @@ Each layer has a distinct responsibility, allowing the project to remain organis
 
 ---
 
-## Foundation
+## Platform
 
-MkDocs provides the documentation engine.
+The Codex is built on proven, open technologies:
 
-Material for MkDocs provides the user interface.
-
-Git provides version control.
-
-GitHub Pages provides publishing.
+- MkDocs
+- Material for MkDocs
+- Git
+- GitHub Pages
 
 ---
 

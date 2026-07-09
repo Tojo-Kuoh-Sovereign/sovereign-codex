@@ -10,7 +10,7 @@ The process is intended to support continuous improvement while maintaining the 
 
 ## Documentation Workflow
 
-Documentation generally progresses through the following stages:
+Documentation progresses through the following lifecycle:
 
 1. Research
 2. Draft

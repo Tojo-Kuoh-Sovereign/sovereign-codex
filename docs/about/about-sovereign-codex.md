@@ -1,10 +1,6 @@
 # About Sovereign Codex
 
-The Sovereign Codex is a structured documentation platform designed to transform information into trusted knowledge through governance, structure, and intelligent tools.
-
-Rather than acting as a traditional wiki, the Codex applies consistent standards, review processes, and documentation principles to ensure information remains accurate, maintainable, and easy to navigate over time.
-
-Its purpose is not simply to collect information, but to create a knowledge system that can evolve alongside the projects it supports.
+The Sovereign Codex is a documentation platform that transforms information into trusted knowledge through governance, structure, and intelligent tools.
 
 ---
 

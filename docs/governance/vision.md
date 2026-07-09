@@ -52,4 +52,4 @@ Governance should remain stable, predictable, and easy to understand.
 
 As Sovereign Codex continues to grow, the framework should support new ideas without requiring continual redesign of the project's foundations.
 
-The long-term vision is to establish a governance model that encourages sustainable development while preserving the quality and integrity of the knowledge base for years to come.
+The long-term vision is to establish a governance model that enables sustainable growth while preserving the quality, integrity, and trustworthiness of the Sovereign Codex.

@@ -4,6 +4,8 @@
 
 To build a documentation ecosystem where knowledge is trusted, discoverable, and continuously improved.
 
+The Sovereign Codex aims to become a long-term knowledge platform where documentation is treated as an evolving engineering discipline rather than a static collection of pages.
+
 ## Mission
 
 Transform information into trusted knowledge through governance, structure, and intelligent tools.
