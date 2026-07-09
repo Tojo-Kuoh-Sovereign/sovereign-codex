@@ -2,15 +2,27 @@
 
 The Evidence Model defines how information is evaluated before it is published within Sovereign Codex.
 
-Its purpose is to promote accuracy, transparency, and consistency by establishing clear expectations for the quality and reliability of documented information.
+Its purpose is to promote accuracy, transparency, and consistency by establishing a common framework for assessing the reliability of documented information.
 
 Rather than requiring absolute certainty, the Evidence Model encourages documenting information with an appropriate level of confidence while clearly identifying assumptions and limitations where necessary.
 
 ---
 
-## Evidence Sources
+## Core Principles
 
-Information published within Sovereign Codex may be supported by one or more of the following evidence sources.
+Evidence should be:
+
+- Reliable
+- Transparent
+- Verifiable
+- Proportionate
+- Continuously reviewed
+
+---
+
+## Accepted Evidence Sources
+
+Documentation may be supported by one or more of the following evidence sources.
 
 ### In-Game Observation
 
@@ -43,7 +55,7 @@ Examples include:
 
 Information produced through testing, experimentation, or collaboration within the player community.
 
-Community research should be independently verified where practical before being presented as established knowledge.
+Community research should be independently verified wherever practical before being presented as established knowledge.
 
 ---
 
@@ -55,16 +67,16 @@ Historical information should clearly distinguish between current and legacy con
 
 ---
 
-## Confidence
+## Confidence Levels
 
 Not all information carries the same level of certainty.
 
 Where appropriate, documentation should distinguish between:
 
-- Verified
-- Supported
-- Preliminary
-- Speculative
+- **Verified** — Supported by direct observation or authoritative sources.
+- **Supported** — Consistent with multiple reliable sources but not fully verified.
+- **Preliminary** — Based upon limited evidence and subject to further validation.
+- **Speculative** — An informed hypothesis that has not yet been verified.
 
 Readers should be able to understand the confidence associated with published information.
 
@@ -74,7 +86,7 @@ Readers should be able to understand the confidence associated with published in
 
 Where conclusions rely upon assumptions, those assumptions should be documented.
 
-Assumptions should never be presented as established fact.
+Assumptions should never be presented as established fact and should remain open to revision as new evidence becomes available.
 
 ---
 
@@ -82,6 +94,14 @@ Assumptions should never be presented as established fact.
 
 New evidence should take precedence over older information.
 
-When reliable evidence contradicts existing documentation, the documentation should be reviewed and updated accordingly.
+When reliable evidence contradicts existing documentation, the documentation should be reviewed, updated, and republished where appropriate.
 
 Maintaining accuracy is more important than preserving previous conclusions.
+
+---
+
+## Continuous Improvement
+
+The Evidence Model should evolve alongside the project.
+
+Improvements should strengthen the consistency, transparency, and reliability of documented information while remaining practical for contributors.
