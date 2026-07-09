@@ -51,7 +51,7 @@
     --border-subtle: rgba(143,118,83,.18);
     --border-strong: rgba(143,118,83,.35);
 
-    /* Component Tokens */
+    /* Components */
 
     --callout-bg: var(--surface-primary);
     --callout-header-bg: rgba(143,118,83,.08);
