@@ -156,40 +156,43 @@ than foundation materials directly.
 }
 
 
-:root {
 /* ======================================================
    STATE TOKENS
 ----------------------------------------------------------
 Purpose:
 
-Communicate semantic meaning through consistent visual
-states.
+Communicate semantic meaning consistently across
+the platform.
 
-Components should reference state tokens rather than
-hard-coded colours.
+State colours should never be hard-coded inside
+components.
 ====================================================== */
 
 /* Information */
 
---state-info
+--state-info: var(--sapphire);
 
 /* Success */
 
---state-success
+--state-success: #4d8f62;
 
 /* Warning */
 
---state-warning
+--state-warning: #c49b3d;
 
 /* Critical */
 
---state-critical
+--state-critical: #b04d4d;
 
 /* Research */
 
---state-research
+--state-research: #8b72c6;
 
-}
+/* TODO:
+State colours will be derived from the
+Design Language once semantic meanings
+have been established.
+*/
 
 /* ==========================================================
    TYPOGRAPHY
@@ -486,4 +489,166 @@ Design → Design Language → Components
 
     letter-spacing: .04em;
 
+}
+
+
+/* ==========================================================
+   TABLES
+-------------------------------------------------------------
+Purpose:
+Present structured reference information.
+
+Related Document:
+Design → Design Language → Components
+========================================================== */
+
+.md-typset table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: var(--surface-primary);
+
+    border: 1px solid var(--border-subtle);
+
+    border-radius: var(--radius-medium);
+
+    overflow: hidden;
+}
+
+.md-typeset th {
+
+    background: var(--surface-secondary);
+
+    color: var(--heading-accent);
+
+    font-weight: 600;
+
+    text-align: left;
+}
+
+.md-typeset td {
+
+    color: var(--text-primary);
+}
+
+.md-typeset th,
+.md-typeset td {
+
+    padding: .85rem 1rem;
+
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.md-typeset tr:last-child td {
+
+    border-bottom: none;
+}
+
+/* ==========================================================
+   CODE BLOCKS
+-------------------------------------------------------------
+Purpose:
+Present source code, commands and configuration
+examples consistently throughout the platform.
+
+Related Document:
+Design → Design Language → Components
+========================================================== */
+
+.md-typeset pre {
+
+    background: var(--surface-secondary);
+
+    border: 1px solid var(--border-subtle);
+
+    border-radius: var(--radius-medium);
+
+    box-shadow: var(--shadow-small);
+}
+
+.md-typeset pre code {
+
+    color: var(--text-primary);
+}
+
+md.md-typeset code {
+
+    background: rgba(255,255,255,.05);
+
+    color: var(--heading-accent);
+
+    border-radius: var(--radius-small);
+
+    padding: .15rem .35rem;
+}
+
+
+/* ==========================================================
+   LISTS
+-------------------------------------------------------------
+Purpose:
+Present ordered and unordered information with
+clear hierarchy and comfortable spacing.
+
+Related Document:
+Design → Design Language → Typography
+========================================================== */
+
+.md-typeset ul,
+.md-typeset ol {
+
+    margin: 1rem 0;
+}
+
+.md-typeset li {
+
+    margin: .35rem 0;
+}
+
+.md-typeset li ul,
+.md-typeset li ol {
+
+    margin-top: .35rem;
+}
+
+
+/* ==========================================================
+   BLOCK QUOTES
+-------------------------------------------------------------
+Purpose:
+Highlight principles, mission statements and
+important quotations without overwhelming the
+surrounding documentation.
+
+Related Document:
+Design → Design Language → Components
+========================================================== */
+
+.md-typeset blockquote {
+
+    background: var(--surface-secondary);
+
+    border-left: 4px solid var(--heading-accent);
+
+    border-radius: var(--radius-medium);
+
+    padding: 1rem 1.5rem;
+
+    margin: 2rem 0;
+}
+
+.md-typeset blockquote p {
+
+    color: var(--text-primary);
+
+    font-style: italic;
+
+    margin: 0;
+}
+
+.md-typeset blockquote a {
+
+    color: var(--interactive);
 }

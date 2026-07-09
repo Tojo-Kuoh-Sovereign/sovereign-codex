@@ -61,3 +61,20 @@ Evaluate:
 - Opportunities for simplification
 
 Avoid rewriting working code unless there is a meaningful architectural improvement.
+
+
+Review this stylesheet against:
+
+- Design Philosophy
+- Design Language
+- Design System
+
+Identify:
+
+• architectural inconsistencies
+• duplicated selectors
+• hard-coded values
+• opportunities to improve maintainability
+
+Do not redesign the stylesheet.
+Prefer incremental refinement.
