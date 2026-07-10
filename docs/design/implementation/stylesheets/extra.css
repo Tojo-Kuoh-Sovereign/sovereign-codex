@@ -168,6 +168,7 @@ State colours should never be hard-coded inside
 components.
 ====================================================== */
 
+:root {
 /* Information */
 
 --state-info: var(--sapphire);
@@ -187,6 +188,7 @@ components.
 /* Research */
 
 --state-research: #8b72c6;
+}
 
 /* TODO:
 State colours will be derived from the
@@ -451,10 +453,14 @@ Design → Design Language → Components
 
 
 /* ==========================================================
-   CALLOUTS
+   KNOWLEDGE STATES
 -------------------------------------------------------------
 Purpose:
-Implements reusable documentation callouts.
+Communicates the meaning, confidence and intent of
+documented knowledge.
+
+Knowledge States provide contextual metadata that
+helps readers interpret information consistently.
 
 Related Document:
 Design → Design Language → Components
@@ -491,6 +497,84 @@ Design → Design Language → Components
 
 }
 
+.md-typeset .admonition.research {
+
+    border-color: var(--state-research);
+}
+
+.md-typeset .research > .admonition-title {
+
+    color: var(--state-research);
+}
+
+.md-typeset .research > .admonition-title::before {
+
+    background-color: var(--state-research);
+}
+
+.md-typeset .admonition.implementation {
+
+    border-color: var(--state-info);
+}
+
+.md-typeset .implementation > .admonition-title {
+
+    color: var(--state-info);
+}
+
+.md-typeset .implementation > .admonition-title::before {
+
+    background-color: var(--state-info);
+}
+
+.md-typeset .admonition.approved {
+
+    border-color: var(--state-success);
+}
+
+.md-typeset .approved > .admonition-title {
+
+    color: var(--state-success);
+}
+
+.md-typeset .approved > .admonition-title::before {
+
+    background-color: var(--state-success);
+}
+
+
+.md-typeset .admonition.console {
+
+    border-color: var(--state-warning);
+}
+
+.md-typeset .console > .admonition-title {
+
+    color: var(--state-warning);
+}
+
+.md-typeset .console > .admonition-title::before {
+
+    background-color: var(--state-warning);
+
+}
+
+.md-typeset .admonition.do-not {
+
+    border-color: var(--state-critical);
+}
+
+.md-typeset .do-not > .admonition-title {
+
+    color: var(--state-critical);
+}
+
+.md-typeset .do-not > .admonition-title::before {
+
+    background-color: var(--state-critical);
+
+}
+
 
 /* ==========================================================
    TABLES
@@ -502,7 +586,7 @@ Related Document:
 Design → Design Language → Components
 ========================================================== */
 
-.md-typset table {
+.md-typeset table {
 
     width: 100%;
 
@@ -573,7 +657,7 @@ Design → Design Language → Components
     color: var(--text-primary);
 }
 
-md.md-typeset code {
+.md-typeset code {
 
     background: rgba(255,255,255,.05);
 
@@ -652,3 +736,217 @@ Design → Design Language → Components
 
     color: var(--interactive);
 }
+
+
+/* ==========================================================
+   IMAGES
+-------------------------------------------------------------
+Purpose:
+Present reference imagery, diagrams and supporting
+visual evidence consistently throughout the platform.
+
+Related Document:
+Design → Design Language → Components
+========================================================== */
+
+.md-typeset img {
+
+    border-radius: var(--radius-medium);
+
+    border: 1px solid var(--shadow-small);
+
+    box-shadow: var(--shadow-small);
+}
+
+.md-typeset figure {
+
+    margin: 2rem auto;
+
+    text-align: center;
+}
+
+.md-typeset figcaption {
+
+    color: var(--text-muted);
+
+    font-size: .85rem;
+
+    margin-top: .75rem;
+
+    font-style: italic;
+}
+
+
+/* ==========================================================
+   SEARCH
+-------------------------------------------------------------
+Purpose:
+Implements the primary knowledge discovery interface.
+
+Related Document:
+Design → Design Language → Layout
+========================================================== */
+
+.md-search__input {
+
+    background: var(--surface-secondary);
+
+    border: 1px solid var(--border-subtle);
+
+    border-radius: var(--radius-medium);
+}
+
+
+/* ==========================================================
+   BUTTONS
+-------------------------------------------------------------
+Purpose:
+Implements primary interactive controls.
+
+Buttons inherit the visual language established by
+navigation and expandable content rather than creating
+a separate interaction style.
+
+Related Document:
+Design → Design Language → Components
+
+Principles:
+- Consistent with the Design Language.
+- Supports content rather than competing with it.
+- Uses restrained colour and motion.
+- Feels engineered rather than decorative.
+========================================================== */
+
+
+/* ==========================================================
+   PRIMARY BUTTON
+-------------------------------------------------------------
+Purpose:
+Represents the primary action available to the user.
+
+Primary buttons borrow the visual characteristics
+of Sovereign expandable headers by combining:
+
+• Surface hierarchy
+• Bronze emphasis
+• Sapphire interaction
+• Subtle elevation
+========================================================== */
+
+.md-typeset .md-button {
+
+    background: var(--surface-secondary);
+
+    color: var(--heading-accent);
+
+    border: 1px solid var(--interactive);
+
+    border-radius: var(--radius-medium);
+
+    box-shadow: var(--shadow-small);
+
+    transition:
+        background 220ms ease,
+        border-color 220ms ease,
+        box-shadow 220ms ease,
+        transform 120ms ease;
+
+}
+
+.md-typeset .md-button:hover {
+
+    background: rgba(63,111,180,.08);
+
+    border-color: var(--interactive);
+
+    color: var(--paper);
+
+    box-shadow: var(--shadow-medium);
+
+    transform: translateY(-1px);
+
+}
+
+.md-typeset .md-button:active {
+
+    transform: translateY(1px);
+
+    box-shadow: var(--shadow-small);
+
+}
+
+
+/* ==========================================================
+   SECONDARY BUTTON
+-------------------------------------------------------------
+Purpose:
+Represents supporting actions.
+
+Secondary buttons should remain visually quieter
+than primary actions while still appearing
+interactive.
+========================================================== */
+
+.md-typeset .md-button--secondary {
+
+    background: transparent;
+
+    color: var(--heading-accent);
+
+    border: 1px solid var(--border-subtle);
+
+}
+
+.md-typeset .md-button--secondary:hover {
+
+    background: rgba(143,118,83,.08);
+
+    border-color: var(--border-subtle);
+
+    color: var(--paper);
+
+}
+
+
+/* ==========================================================
+   FOOTER
+-------------------------------------------------------------
+Purpose:
+Implements the global application footer.
+
+Related Document:
+Design → Design Language → Layout
+========================================================== */
+
+.md-footer {
+
+    background: var(--surface-secondary);
+
+    border-top: 1px solid var(--border-subtle);
+}
+
+.md-footer-nav {
+
+    background: transparent;
+}
+
+.md-footer-meta {
+
+    background: var(--surface-primary);
+
+    border-top: 1px solid var(--border-subtle);
+
+    color: var(--text-muted);
+}
+
+.md-footer a {
+
+    color: var(--interactive);
+}
+
+.md-footer a:hover {
+
+    color: var(--interactive-hover);
+}
+
+
