@@ -153,7 +153,22 @@ than foundation materials directly.
 
     --panel-bg: var(--surface-secondary);
 
-}
+    /* Scrollbars */
+
+    --scrollbar-thumb: var(--steel);
+    --scrollbar-thumb-hover: var(--bronze);
+
+    /* Buttons */
+
+    --button-primary-hover-bg: rgba(63,111,180,.08);
+    --button-primary-hover-text: var(--paper);
+
+    --button-secondary-hover-bg: rgba(143,118,83,.08);
+    --button-secondary-hover-text: var(--paper);
+
+    /* Inline Code */
+
+    --code-inline-bg: var(--code-inline-bg)
 
 
 /* ======================================================
@@ -168,7 +183,7 @@ State colours should never be hard-coded inside
 components.
 ====================================================== */
 
-:root {
+
 /* Information */
 
 --state-info: var(--sapphire);
@@ -326,7 +341,9 @@ Design → Design Language → Layout
 
 .md-nav__link {
 
-    transition: all 180ms ease;
+    transition:
+    color 180ms ease,
+    background 180ms ease;
 
 }
 
@@ -372,49 +389,28 @@ Design → Design Language → Accessibility
 
 * {
 
-    scrollbar-width: thin;
-
-    scrollbar-color: var(--steel) transparent;
-
-}
-
-::-webkit-scrollbar {
-
-    width: 10px;
-
-    height: 10px;
+    scrollbar-color:
+        var(--scrollbar-thumb)
+        transparent;
 
 }
-
-::-webkit-scrollbar-track {
-
-    background: transparent;
-
-}
-
-::-webkit-scrollbar-thumb {
-
-    background: var(--steel);
-
-    border-radius: 999px;
-
-}
-
-::-webkit-scrollbar-thumb:hover {
-
-    background: var(--bronze);
-
-}
-
-/* Sidebar Override */
 
 .md-sidebar__scrollwrap:hover,
 .md-sidebar__scrollwrap:focus-within {
 
-    scrollbar-color: var(--steel) transparent;
+    scrollbar-color:
+        var(--scrollbar-thumb-hover)
+        transparent;
 
 }
 
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+}
 
 /* ==========================================================
    DIVIDER
@@ -753,7 +749,7 @@ Design → Design Language → Components
 
     border-radius: var(--radius-medium);
 
-    border: 1px solid var(--shadow-small);
+    border: 1px solid var(--border-subtle);
 
     box-shadow: var(--shadow-small);
 }
@@ -855,11 +851,11 @@ of Sovereign expandable headers by combining:
 
 .md-typeset .md-button:hover {
 
-    background: rgba(63,111,180,.08);
+    background: var(--button-primary-hover-bg);
 
     border-color: var(--interactive);
 
-    color: var(--paper);
+    color: var(--button-primary-hover-text);
 
     box-shadow: var(--shadow-medium);
 
@@ -899,11 +895,11 @@ interactive.
 
 .md-typeset .md-button--secondary:hover {
 
-    background: rgba(143,118,83,.08);
+    background: var(--button-secondary-hover-bg);
 
     border-color: var(--border-subtle);
 
-    color: var(--paper);
+    color: var(--button-primary-hover-text);
 
 }
 
