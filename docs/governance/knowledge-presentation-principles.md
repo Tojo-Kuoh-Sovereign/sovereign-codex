@@ -1,132 +1,216 @@
-# Knowledge Presentation Principles
+# Sovereign Knowledge Presentation Principles (SKPP)
+
+> **Status:** Draft (Version 0.1)
+>
+> **Document Owner:** Sovereign Project Office
+>
+> **Framework:** Sovereign Documentation Framework (SDF)
+>
+> **Purpose:** Establish the enduring principles that govern how knowledge is presented throughout the Sovereign Codex.
 
 ---
 
-## Purpose
+# Overview
 
-Define the philosophical principles that govern how knowledge should be communicated throughout the Sovereign Codex.
+The Sovereign Knowledge Presentation Principles (SKPP) define the philosophical foundation for presenting knowledge throughout the Sovereign Codex.
 
-These principles establish *why* information is presented in a particular way and provide the foundation upon which all Knowledge Presentation Standards are built.
+These principles are evidence-informed, technology-agnostic, and intended to evolve through continuous research, implementation, and governance.
 
-This document should be informed by research from cognitive psychology, usability, accessibility, information architecture and technical communication.
+The principles describe **why** knowledge should be presented in particular ways rather than prescribing specific implementation techniques.
 
----
-
-## Scope
-
-This research should investigate:
-
-- How people discover information
-- How people process information
-- How people retain information
-- How people develop trust in information
-- How presentation influences understanding
-
-Rather than prescribing implementation, this document establishes the enduring principles that guide future standards.
+Presentation Standards, user interface decisions, and platform-specific implementations should derive from these principles.
 
 ---
 
-# Research Areas
+# Relationship to the Sovereign Documentation Framework
 
-## Human Learning
+The Sovereign Documentation Framework separates philosophy from implementation.
 
-Research how people acquire and retain knowledge.
+```text
+Vision
+        ↓
+Research Philosophy
+        ↓
+Governance
+        ↓
+Knowledge Presentation Principles
+        ↓
+Presentation Standards
+        ↓
+Implementation
+        ↓
+Knowledge Articles
+```
 
-Questions:
-
-- How do people learn complex topics?
-- What improves understanding?
-- What improves long-term retention?
-- What creates confusion?
-
----
-
-## Cognitive Load
-
-Research techniques that reduce mental effort.
-
-Questions:
-
-- Information chunking
-- Progressive disclosure
-- Reading fatigue
-- Working memory limitations
-- Information density
+Each layer provides governance for the layer beneath it.
 
 ---
 
-## Reading Behaviour
+# Principles
 
-Research how people consume information online.
+## Principle 1 — Purpose Before Presentation
 
-Questions:
+> **Knowledge exists to help people achieve an outcome, not simply to present information.**
 
-- Scanning behaviour
-- Reading patterns
-- Heading hierarchy
-- Paragraph length
-- List usage
+Knowledge should support meaningful objectives such as:
 
----
+- Answering questions
+- Solving problems
+- Completing tasks
+- Supporting learning
+- Reducing uncertainty
 
-## Trust
-
-Research what makes information trustworthy.
-
-Questions:
-
-- Transparency
-- Sources
-- Evidence
-- Verification
-- Consistency
+Presentation should always serve the user's objective rather than the presentation medium.
 
 ---
 
-## Information Architecture
+## Principle 2 — Progressive Engagement
 
-Research how knowledge should be organised.
+> **Knowledge should support progressive engagement by allowing users to rapidly evaluate relevance before requiring sustained attention.**
 
-Questions:
+Users rarely begin by reading in detail.
 
-- Mental models
-- Navigation
-- Classification
-- Information hierarchy
-- Discoverability
+Knowledge should support gradual investment of attention by helping users determine relevance before presenting detailed information.
 
 ---
 
-## Accessibility
+## Principle 3 — Respect the User's Current Understanding
 
-Research inclusive presentation techniques.
+> **Knowledge should meet people where they are, not where the system expects them to be.**
 
-Questions:
+People interact with knowledge using their existing understanding, vocabulary, and mental models.
 
-- Cognitive accessibility
-- Dyslexia
-- ADHD
-- Colour independence
-- Screen readers
+Knowledge presentation should assist users in progressing from their current understanding without assuming prior expertise.
 
 ---
 
-## Technical Communication
+## Principle 4 — Reduce Unnecessary Cognitive Effort
 
-Research professional documentation practices.
+> **Knowledge should minimise unnecessary cognitive effort while preserving meaningful challenge.**
 
-Questions:
+Users should devote cognitive effort to understanding knowledge rather than interpreting presentation.
 
-- Documentation structure
-- Technical writing
-- User guidance
-- Procedures
-- Reference material
+Presentation should reduce avoidable cognitive load through clear organisation, language, and structure.
 
 ---
 
-## Outcome
+## Principle 5 — Preserve Orientation
 
-This research should establish the enduring principles that define how the Sovereign Codex communicates knowledge.
+> **Knowledge should help users understand where they are, how information relates, and where they can go next.**
 
-These principles should remain stable as the platform evolves and should inform all future Knowledge Presentation Standards.
+Knowledge rarely exists in isolation.
+
+Presentation should preserve context and relationships to help users confidently navigate a broader body of knowledge.
+
+---
+
+## Principle 6 — Support Knowledge Progression
+
+> **Knowledge should support movement from uncertainty towards understanding through progressive learning.**
+
+Understanding develops over time.
+
+Knowledge presentation should recognise different stages of learning while supporting continued progression where appropriate.
+
+---
+
+## Principle 7 — Build Confidence Through Clarity
+
+> **Knowledge should communicate clearly enough that users can confidently judge relevance, credibility, and applicability.**
+
+Clear communication supports trust.
+
+Users should be able to determine whether information is appropriate for their current objective without unnecessary ambiguity.
+
+---
+
+## Principle 8 — Encourage Meaningful Exploration
+
+> **Knowledge should reward curiosity without interrupting understanding.**
+
+Related knowledge should be discoverable through meaningful relationships rather than arbitrary navigation.
+
+Exploration should enhance learning while respecting the user's current objective.
+
+---
+
+## Principle 9 — Continuous Improvement
+
+> **Knowledge presentation is an evolving discipline informed by research, implementation, and observation.**
+
+Knowledge Presentation Principles should remain stable.
+
+Presentation Standards and implementations should evolve as:
+
+- New evidence emerges.
+- Technology changes.
+- User behaviour evolves.
+- Better implementation approaches are identified.
+
+Continuous improvement is an intended outcome of the Sovereign Documentation Framework.
+
+---
+
+# Scope
+
+These principles apply to all knowledge communicated throughout the Sovereign ecosystem, including but not limited to:
+
+- Knowledge Articles
+- Documentation
+- Tutorials
+- Search Results
+- Navigation Systems
+- AI Assistants
+- Intelligent Tools
+- Applications
+- APIs
+
+---
+
+# Implementation
+
+These principles intentionally avoid prescribing implementation details.
+
+Examples include:
+
+- Page layouts
+- Cards
+- Tables
+- Accordions
+- Breadcrumbs
+- Inline links
+- Search interfaces
+- AI interactions
+
+These belong within Presentation Standards and should be evaluated against the principles defined within this document.
+
+---
+
+# Governance
+
+The Sovereign Knowledge Presentation Principles are governed through the Sovereign Research Philosophy.
+
+Principles should emerge from validated concepts supported by credible evidence rather than personal preference or individual studies.
+
+As additional research is completed, principles may be refined where evidence demonstrates improved approaches to communicating knowledge.
+
+---
+
+# Continuous Review
+
+The Sovereign Knowledge Presentation Principles should be reviewed periodically alongside:
+
+- Knowledge Presentation Research
+- Evidence Register
+- Presentation Standards
+- Implementation Feedback
+
+The objective is not to preserve historical decisions, but to continually improve the quality, accessibility, and trustworthiness of knowledge presented throughout the Sovereign ecosystem.
+
+---
+
+# Version History
+
+| Version | Status | Notes |
+|----------|--------|-------|
+| 0.1 | Draft | Initial evidence-informed draft derived primarily from Research Question 1 (How do people discover information?). Future research may refine or expand these principles. |

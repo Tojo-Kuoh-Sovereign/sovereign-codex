@@ -1,154 +1,41 @@
-# Milestone 8 — Knowledge Experience
+# Milestone 9 — Sovereign Knowledge Presentation Principles
 
----
+## Summary
 
-## Objective
+Milestone 9 marks the transition from research into governance.
 
-Establish the standards that define how users discover, navigate, interpret, and trust knowledge throughout the Sovereign Codex.
+Following the completion of the initial Knowledge Presentation Research programme for **Research Question 1 – How do people discover information?**, the recurring concepts identified through evidence have been consolidated into the first working draft of the **Sovereign Knowledge Presentation Principles (SKPP)**.
 
-With the Governance Framework, Documentation Standards, Design Language, and Design System now established, this sprint shifts focus from platform construction to platform experience.
+This milestone establishes the philosophical foundation that will guide all future knowledge articles, documentation, search systems, navigation, intelligent tools, and presentation standards throughout the Sovereign Codex.
 
-Every decision within this sprint should reinforce the Sovereign mission:
+The Knowledge Presentation Principles intentionally remain technology-agnostic and implementation-independent, ensuring that future standards and interfaces can evolve while remaining aligned with the Sovereign vision.
 
-> Transform information into trusted knowledge.
+## Outcomes
 
----
+* Completed the first draft of the Sovereign Knowledge Presentation Principles (Version 0.1).
+* Established the relationship between Governance, Principles, Standards, and Implementation.
+* Confirmed the transition from evidence collection towards principle development.
+* Defined a governance foundation for future Presentation Standards.
+* Completed initial research into:
 
-## North Star
+  * Information Scent
+  * Recognition vs Recall
+  * Scanning Behaviour
+  * Search Behaviour
 
-Every interaction should reduce the effort required to discover, understand, and trust knowledge.
+    * Search Intent
+    * Search Formulation
+    * Search Feedback
+* Scoped Navigation & Wayfinding as an implementation-informed research topic to be revisited during prototype development.
 
----
+## Key Achievement
 
-## Deliverables
+The project has reached a point where future knowledge articles can be developed against a consistent philosophical framework rather than individual design decisions.
 
-### ☐ Knowledge Presentation Standards
+This milestone represents the beginning of evidence-informed knowledge creation within the Sovereign Documentation Framework.
 
-Define how knowledge is communicated throughout the Codex.
+## Next Milestone
 
-Topics include:
+Begin developing the first experimental knowledge articles using the Knowledge Presentation Principles.
 
-- Standard page structure
-- Information hierarchy
-- Procedures
-- Comparisons
-- Best practices
-- Examples
-- Decision trees
-- References
-- Console-specific guidance
-- Knowledge State usage
-
----
-
-### ☐ Search Experience
-
-Define how knowledge should be discovered.
-
-Topics include:
-
-- Search philosophy
-- Result prioritisation
-- Knowledge State visibility
-- Metadata usage
-- Search behaviour
-- Related content
-- Future intelligent search opportunities
-
----
-
-### ☐ Navigation Experience
-
-Refine how users move throughout the platform.
-
-Topics include:
-
-- Navigation hierarchy
-- Sidebar behaviour
-- Table of contents
-- Breadcrumbs
-- Cross-references
-- Related pages
-- Internal linking standards
-
----
-
-### ☐ Homepage Identity
-
-Design the primary entry point to the Sovereign Codex.
-
-The homepage should communicate:
-
-- Purpose
-- Vision
-- Trust
-- Scope
-- Where new users begin
-
----
-
-### ☐ Sovereign Branding
-
-Continue developing the visual identity of the platform.
-
-Potential work includes:
-
-- Phoenix branding
-- Header refinement
-- Homepage banner
-- Logo integration
-- Icons
-- Visual identity assets
-- Brand consistency
-
-Branding should support the Design System rather than replace it.
-
----
-
-### ☐ Metadata Standards
-
-Define the metadata architecture used throughout the platform.
-
-Potential metadata includes:
-
-- Knowledge State
-- Platform
-- Version
-- Last Reviewed
-- Sources
-- Related Pages
-- Tags
-- Difficulty
-- Estimated Reading Time
-
-Metadata should improve discoverability, navigation, maintenance, and future intelligent tooling.
-
----
-
-## Success Criteria
-
-Sprint 5 is complete when the Sovereign Codex establishes a consistent user experience for:
-
-- Presenting knowledge
-- Discovering knowledge
-- Navigating knowledge
-- Understanding platform identity
-- Supporting future platform growth
-
-Rather than introducing isolated features, this sprint defines the experience standards that future documentation will follow.
-
----
-
-## Relationship to the Codex
-
-Sprint 5 builds upon:
-
-- Governance Framework
-- Documentation Standards
-- Design Philosophy
-- Design Language
-- Design System
-- Component Library
-- Knowledge State Standards
-
-Together these foundations allow the Sovereign Codex to evolve from a documentation website into a structured knowledge platform.
+Prototype pages will be used to validate Presentation Standards and refine implementation guidance through practical experimentation.

@@ -1,10 +1,10 @@
 # Governance
 
-The Governance framework defines how Sovereign Codex is developed, maintained, and improved over time.
+The Sovereign Codex is designed as an evolving knowledge system.
 
-Its purpose is to ensure that documentation remains accurate, consistent, transparent, and sustainable as the project grows.
+Governance, principles, and standards exist not to preserve existing implementations, but to provide a stable framework through which the Codex can continuously improve as technology, evidence, and user needs evolve.
 
-Rather than governing the content itself, these documents govern the processes used to create, review, and maintain that content.
+Continuous improvement is not an exception to the framework; it is an intended outcome of the framework.
 
 ---
 
