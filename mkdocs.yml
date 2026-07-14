@@ -51,4 +51,4 @@ plugins:
   - search
 
 extra_css:
-  - design/implementation/stylesheets/extra.css
+  - extra.css
