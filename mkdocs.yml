@@ -9,8 +9,10 @@ theme:
 
   language: en
 
-  logo: 96-assets/10-branding/sovereign-mark-master.svg
-  favicon: 96-assets/10-branding/sovereign-mark-master.svg
+  logo: assets/10-branding/sovereign-mark-master.svg
+  favicon: assets/10-branding/sovereign-mark-master.svg
+
+  custom_dir: docs/overrides
 
   palette:
     - scheme: slate
@@ -54,12 +56,12 @@ plugins:
   - search
 
 extra_css:
-  - 96-assets/30-styles/base.css
-  - 96-assets/30-styles/layout.css
-  - 96-assets/30-styles/typography.css
-  - 96-assets/30-styles/colour.css
-  - 96-assets/30-styles/components.css
-  - 96-assets/30-styles/navigation.css
-  - 96-assets/30-styles/branding.css
-  - 96-assets/30-styles/utilities.css
-  - 96-assets/30-styles/homepage.css
+  - assets/30-css/layout.css
+  - assets/30-css/base.css
+  - assets/30-css/typography.css
+  - assets/30-css/colour.css
+  - assets/30-css/components.css
+  - assets/30-css/navigation.css
+  - assets/30-css/branding.css
+  - assets/30-css/utilities.css
+  - assets/30-css/homepage.css
