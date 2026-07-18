@@ -9,6 +9,9 @@ theme:
 
   language: en
 
+  logo: 96-assets/10-branding/sovereign-mark-master.svg
+  favicon: 96-assets/10-branding/sovereign-mark-master.svg
+
   palette:
     - scheme: slate
       primary: indigo
@@ -51,4 +54,12 @@ plugins:
   - search
 
 extra_css:
-  - extra.css
+  - 96-assets/30-styles/base.css
+  - 96-assets/30-styles/layout.css
+  - 96-assets/30-styles/typography.css
+  - 96-assets/30-styles/colour.css
+  - 96-assets/30-styles/components.css
+  - 96-assets/30-styles/navigation.css
+  - 96-assets/30-styles/branding.css
+  - 96-assets/30-styles/utilities.css
+  - 96-assets/30-styles/homepage.css
