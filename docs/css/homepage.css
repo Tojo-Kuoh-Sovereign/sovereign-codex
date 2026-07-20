@@ -1,0 +1,508 @@
+/* ==========================================================
+   HOMEPAGE
+   Sovereign Documentation Framework
+
+   Purpose
+   -------
+   Defines the landing page experience for the
+   Sovereign Documentation Framework.
+
+   This stylesheet composes reusable design-system
+   components into a cohesive homepage.
+
+   It does not define:
+
+   • Design Tokens
+   • Typography
+   • Navigation
+   • Reusable Components
+
+   Related Documents
+
+   Architecture → Homepage
+   Architecture → Design System
+   ========================================================== */
+
+
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   Hero Section
+   ---------------------------------------------------------- */
+
+#homepage-hero {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 100vh;
+
+}
+
+
+/* ----------------------------------------------------------
+   Hero Content
+   ---------------------------------------------------------- */
+
+.hero-content {
+
+    max-width: 900px;
+
+    text-align: center;
+
+}
+
+
+/* ----------------------------------------------------------
+   Hero Header
+   ---------------------------------------------------------- */
+
+.hero-header {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+
+/* ----------------------------------------------------------
+   Hero Logo
+   ---------------------------------------------------------- */
+
+.hero-logo {
+
+    display: block;
+
+    width: 120px;
+
+    height: auto;
+
+    margin: 2rem auto;
+
+}
+
+
+/* ----------------------------------------------------------
+   Hero Kicker
+   ---------------------------------------------------------- */
+
+.hero-kicker {
+
+    margin-bottom: 1rem;
+
+    font-size: .8rem;
+
+    letter-spacing: .25rem;
+
+    text-transform: uppercase;
+
+    opacity: .8;
+
+}
+
+
+/* ----------------------------------------------------------
+   Hero Title
+   ---------------------------------------------------------- */
+
+.hero-title {
+
+    margin-bottom: 1rem;
+
+    font-size: clamp(3rem, 6vw, 5rem);
+
+    font-weight: 800;
+
+}
+
+
+/* ----------------------------------------------------------
+   Hero Subtitle
+   ---------------------------------------------------------- */
+
+.hero-subtitle {
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    font-size: 1.25rem;
+
+    opacity: .85;
+
+}
+
+
+/* ----------------------------------------------------------
+   Hero Body
+   ---------------------------------------------------------- */
+
+.hero-body {
+
+    margin: 2rem 0;
+
+}
+
+
+/* ----------------------------------------------------------
+   Hero Actions
+   ---------------------------------------------------------- */
+
+.hero-actions {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: var(--space-md);
+
+    margin-top: var(--space-xl);
+
+}
+
+
+/* ----------------------------------------------------------
+   Hero Buttons
+   ---------------------------------------------------------- */
+
+.hero-button {
+
+    display: inline-block;
+
+    padding: .8rem 1.6rem;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    border-radius: var(--radius-medium);
+
+    transition:
+        background var(--motion-normal),
+        border-color var(--motion-normal),
+        box-shadow var(--motion-normal),
+        transform var(--motion-fast);
+
+}
+
+.hero-button-primary {
+
+    background: var(--surface-secondary);
+
+    color: var(--heading-accent);
+
+    border: 1px solid var(--interactive);
+
+    box-shadow: var(--shadow-small);
+
+}
+
+.hero-button-primary:hover {
+
+    background: var(--button-primary-hover-bg);
+
+    box-shadow: var(--shadow-medium);
+
+    transform: translateY(-1px);
+
+}
+
+.hero-button-secondary {
+
+    background: transparent;
+
+    color: var(--heading-accent);
+
+    border: 1px solid var(--border-subtle);
+
+}
+
+.hero-button-secondary:hover {
+
+    background: var(--button-secondary-hover-bg);
+
+}
+
+
+
+/* ==========================================================
+   DISCOVERY
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   Discovery Section
+   ---------------------------------------------------------- */
+
+#homepage-discovery {
+
+}
+
+
+/* ----------------------------------------------------------
+   Discovery Content
+   ---------------------------------------------------------- */
+
+.knowledge-areas {
+
+}
+
+.knowledge-areas__content {
+
+}
+
+.knowledge-areas__header {
+
+}
+
+
+/* ----------------------------------------------------------
+   Discovery Grid
+   ---------------------------------------------------------- */
+
+.knowledge-areas__grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: var(--space-xl);
+
+}
+
+
+/* ----------------------------------------------------------
+   Knowledge Cards
+   ---------------------------------------------------------- */
+
+.knowledge-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-md);
+
+    padding: var(--space-md);
+
+    background: var(--surface-secondary);
+
+    border: 1px solid var(--interactive);
+
+    border-radius: var(--radius-medium);
+
+    color: inherit;
+
+    text-decoration: none;
+
+    transition:
+        transform var(--motion-fast),
+        border-color var(--motion-normal),
+        box-shadow var(--motion-normal);
+
+}
+
+.knowledge-card:hover {
+
+    background: var(--button-secondary-hover-bg);
+
+    border-color: var(--border-subtle);
+
+    box-shadow: var(--shadow-medium);
+
+    transform: translateY(-2px);
+
+}
+
+.knowledge-card__icon {
+
+    font-size: 1.7rem;
+
+    line-height: 1;
+
+}
+
+.knowledge-card__title {
+
+    margin: 0;
+
+    font-size: 1.4rem;
+
+    font-weight: 600;
+
+}
+
+.knowledge-card__description {
+
+    margin: 0;
+
+    line-height: 1.6;
+
+    color: var(--text-muted);
+
+}
+
+
+
+/* ==========================================================
+   TRUST
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   Trust Section
+   ---------------------------------------------------------- */
+
+#homepage-trust {
+
+}
+
+.trust-areas {
+
+}
+
+.trust-areas__content {
+
+}
+
+.trust-areas__header {
+
+}
+
+
+/* ----------------------------------------------------------
+   Trust Grid
+   ---------------------------------------------------------- */
+
+.trust-areas__grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: var(--space-xl);
+
+}
+
+
+/* ----------------------------------------------------------
+   Trust Cards
+   ---------------------------------------------------------- */
+
+.trust-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-md);
+
+    padding: var(--space-md);
+
+    background: var(--surface-secondary);
+
+    border: 1px solid var(--interactive);
+
+    border-radius: var(--radius-medium);
+
+    color: inherit;
+
+    text-decoration: none;
+
+    transition:
+        transform var(--motion-fast),
+        border-color var(--motion-normal),
+        box-shadow var(--motion-normal);
+
+}
+
+.trust-card:hover {
+
+    background: var(--button-secondary-hover-bg);
+
+    border-color: var(--border-subtle);
+
+    box-shadow: var(--shadow-medium);
+
+    transform: translateY(-2px);
+
+}
+
+.trust-card__icon {
+
+    font-size: 1.7rem;
+
+    line-height: 1;
+
+}
+
+.trust-card__title {
+
+    margin: 0;
+
+    font-size: 1.4rem;
+
+    font-weight: 600;
+
+}
+
+.trust-card__description {
+
+    margin: 0;
+
+    line-height: 1.6;
+
+    color: var(--text-muted);
+
+}
+
+
+
+/* ==========================================================
+   FUTURE SECTIONS
+   ========================================================== */
+
+/* ----------------------------------------------------------
+   Featured Content
+   ---------------------------------------------------------- */
+
+/*
+Reserved for future implementation.
+*/
+
+
+/* ----------------------------------------------------------
+   Latest Updates
+   ---------------------------------------------------------- */
+
+/*
+Reserved for future implementation.
+*/
+
+
+/* ----------------------------------------------------------
+   Community
+   ---------------------------------------------------------- */
+
+/*
+Reserved for future implementation.
+*/
+
+
+/* ----------------------------------------------------------
+   Call to Action
+   ---------------------------------------------------------- */
+
+/*
+Reserved for future implementation.
+*/

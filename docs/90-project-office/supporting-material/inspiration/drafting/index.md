@@ -1,1 +1,0 @@
-Icons, diagrams, line weights

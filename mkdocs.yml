@@ -1,67 +1,166 @@
+# ==========================================================
+# Sovereign Documentation Framework
+#
+# MkDocs Configuration
+#
+# Purpose
+# -------
+# Defines the global configuration for the Sovereign
+# Documentation Framework.
+#
+# This file controls:
+#
+# • Site Metadata
+# • Theme Configuration
+# • Navigation
+# • Plugins
+# • Markdown Extensions
+# • Global Assets
+#
+# ==========================================================
+
 site_name: Sovereign Codex
 site_url: https://tojo-kuoh-sovereign.github.io/sovereign-codex/
 site_description: Trusted knowledge through governance, structure, and intelligent tools.
 site_author: Tojo Kuoh
+
+repo_name: Sovereign Codex
+repo_url: https://github.com/Tojo-Kuoh-Sovereign/sovereign-codex
+
+edit_uri: ""
+
+copyright: >
+  © 2026 Sovereign Codex.
+  All rights reserved.
+
 use_directory_urls: true
 
+
+
+# ==========================================================
+# THEME
+# ==========================================================
+
 theme:
+
   name: material
+
+  custom_dir: docs/html
 
   language: en
 
-  logo: assets/10-branding/sovereign-mark-master.svg
-  favicon: assets/10-branding/sovereign-mark-master.svg
-
-  custom_dir: docs/overrides
+  logo: assets/branding/sovereign-mark-master.svg
+  favicon: assets/branding/sovereign-mark-master.svg
 
   palette:
+
     - scheme: slate
+
       primary: indigo
+
       accent: cyan
 
   features:
+
     # Navigation
+
     - navigation.instant
     - navigation.tabs
     - navigation.sections
     - navigation.expand
-    - navigation.top
     - navigation.indexes
+    - navigation.top
     - navigation.tracking
 
     # Table of Contents
+
     - toc.follow
 
     # Search
+
     - search.suggest
     - search.highlight
 
     # Content
+
     - content.code.copy
 
+
+
+# ==========================================================
+# MARKDOWN
+# ==========================================================
+
 markdown_extensions:
+
   - admonition
+
   - attr_list
+
   - md_in_html
 
   - pymdownx.details
+
   - pymdownx.superfences
+
   - pymdownx.highlight
+
   - pymdownx.inlinehilite
+
   - pymdownx.keys
+
   - pymdownx.tabbed:
+
       alternate_style: true
 
+
+
+# ==========================================================
+# PLUGINS
+# ==========================================================
+
 plugins:
+
   - search
 
+
+
+# ==========================================================
+# STYLESHEETS
+# ==========================================================
+
 extra_css:
-  - assets/30-css/layout.css
-  - assets/30-css/base.css
-  - assets/30-css/typography.css
-  - assets/30-css/colour.css
-  - assets/30-css/components.css
-  - assets/30-css/navigation.css
-  - assets/30-css/branding.css
-  - assets/30-css/utilities.css
-  - assets/30-css/homepage.css
+
+  - css/base.css
+
+  - css/typography.css
+
+  - css/layout.css
+
+  - css/navigation.css
+
+  - css/components.css
+
+  - css/homepage.css
+
+
+
+# ==========================================================
+# NAVIGATION
+# ==========================================================
+
+nav:
+
+  - Home: index.md
+
+  - Governance:
+      - Overview: 20-governance/index.md
+
+  - Knowledge:
+      - Overview: 30-knowledge/index.md
+
+  - Roadmap:
+      - Overview: 40-roadmap/index.md
+
+  - Projects:
+      - Overview: 50-projects/index.md

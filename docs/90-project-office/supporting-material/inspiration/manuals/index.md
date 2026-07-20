@@ -1,1 +1,0 @@
-Layout, spacing, information density

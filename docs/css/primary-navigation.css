@@ -1,0 +1,171 @@
+/* ==========================================================
+   NAVIGATION
+   Sovereign Documentation Framework
+
+   Purpose
+   -------
+   Defines navigation components used throughout the
+   Sovereign Documentation Framework.
+
+   This file controls:
+
+   • Application Header
+   • Primary Navigation
+   • Sidebar Navigation
+   • Knowledge Discovery (Search)
+
+   It does not define:
+
+   • Layout
+   • Typography
+   • Design Tokens
+   • Reusable Components
+
+   Related Documents
+
+   Architecture → Navigation
+   Architecture → Design System
+   ========================================================== */
+
+
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   Application Header
+
+   Provides the primary application banner and establishes
+   visual hierarchy for global navigation.
+   ---------------------------------------------------------- */
+
+.md-header {
+
+    background: var(--interactive);
+
+    border-bottom: 1px solid var(--border-subtle);
+
+    box-shadow: var(--shadow-small);
+
+}
+
+
+
+/* ==========================================================
+   PRIMARY NAVIGATION
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   Navigation Tabs
+
+   Provides top-level navigation between major
+   documentation areas.
+   ---------------------------------------------------------- */
+
+.md-tabs {
+
+    background: var(--interactive);
+
+}
+
+.md-tabs__link {
+
+    transition: color var(--motion-fast);
+
+}
+
+.md-tabs__link:hover {
+
+    color: var(--interactive-hover);
+
+}
+
+
+
+/* ==========================================================
+   SIDEBAR
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   Sidebar Container
+
+   Provides structured navigation for documentation
+   hierarchy.
+   ---------------------------------------------------------- */
+
+.md-sidebar {
+
+    border-right: 1px solid var(--border-subtle);
+
+}
+
+
+/* ----------------------------------------------------------
+   Navigation Links
+   ---------------------------------------------------------- */
+
+.md-nav__link {
+
+    transition:
+        color var(--motion-fast),
+        background var(--motion-fast);
+
+}
+
+.md-nav__link:hover {
+
+    color: var(--interactive-hover);
+
+}
+
+.md-nav__link--active {
+
+    color: var(--text-primary);
+
+    font-weight: 500;
+
+}
+
+
+/* ----------------------------------------------------------
+   Navigation Sections
+   ---------------------------------------------------------- */
+
+.md-nav__title {
+
+    color: var(--text-secondary);
+
+    font-size: .68rem;
+
+    letter-spacing: .04em;
+
+    text-transform: uppercase;
+
+}
+
+
+
+/* ==========================================================
+   SEARCH
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   Search Input
+
+   Primary knowledge discovery interface.
+   ---------------------------------------------------------- */
+
+.md-search__input {
+
+    background: var(--surface-secondary);
+
+    border: 1px solid var(--border-subtle);
+
+    border-radius: var(--radius-medium);
+
+}

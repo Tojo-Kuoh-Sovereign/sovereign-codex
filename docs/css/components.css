@@ -1,0 +1,640 @@
+/* ==========================================================
+   COMPONENTS
+   Sovereign Documentation Framework
+
+   Purpose
+   -------
+   Defines reusable presentation components used
+   throughout the Sovereign Documentation Framework.
+
+   Scope
+   -----
+   Owns reusable Markdown components and shared UI.
+
+   Does not define:
+
+   • Design Tokens
+   • Typography
+   • Layout
+   • Navigation
+   • Page-specific styling
+
+   Related Documents
+
+   Architecture → Components
+   Architecture → Design System
+   ========================================================== */
+
+
+
+/* ==========================================================
+   BUTTONS
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   Primary Button
+
+   Represents the primary action available to the user.
+   ---------------------------------------------------------- */
+
+.md-typeset .md-button {
+
+    background: var(--surface-secondary);
+
+    color: var(--heading-accent);
+
+    border: 1px solid var(--interactive);
+
+    border-radius: var(--radius-medium);
+
+    box-shadow: var(--shadow-small);
+
+    transition:
+        background var(--motion-normal),
+        border-color var(--motion-normal),
+        box-shadow var(--motion-normal),
+        transform var(--motion-fast);
+
+}
+
+.md-typeset .md-button:hover {
+
+    background: var(--button-primary-hover-bg);
+
+    border-color: var(--interactive);
+
+    color: var(--button-primary-hover-text);
+
+    box-shadow: var(--shadow-medium);
+
+    transform: translateY(-1px);
+
+}
+
+.md-typeset .md-button:active {
+
+    transform: translateY(1px);
+
+    box-shadow: var(--shadow-small);
+
+}
+
+
+/* ----------------------------------------------------------
+   Secondary Button
+   ---------------------------------------------------------- */
+
+.md-typeset .md-button--secondary {
+
+    background: transparent;
+
+    color: var(--heading-accent);
+
+    border: 1px solid var(--border-subtle);
+
+}
+
+.md-typeset .md-button--secondary:hover {
+
+    background: var(--button-secondary-hover-bg);
+
+    color: var(--button-secondary-hover-text);
+
+}
+
+
+
+/* ==========================================================
+   CARDS
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   Standard Card
+   ---------------------------------------------------------- */
+
+/*
+Reserved for future card components.
+*/
+
+
+
+/* ----------------------------------------------------------
+   Knowledge Card
+   ---------------------------------------------------------- */
+
+/*
+Reserved for future implementation.
+*/
+
+
+
+/* ----------------------------------------------------------
+   Feature Card
+   ---------------------------------------------------------- */
+
+/*
+Reserved for future implementation.
+*/
+
+
+
+/* ----------------------------------------------------------
+   Call-to-Action Card
+   ---------------------------------------------------------- */
+
+/*
+Reserved for future implementation.
+*/
+
+
+
+/* ==========================================================
+   KNOWLEDGE STATES
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   Admonitions
+   ---------------------------------------------------------- */
+
+.md-typeset .admonition,
+.md-typeset details {
+
+    background: var(--callout-bg);
+
+    border: 1px solid var(--callout-border);
+
+    border-radius: var(--radius-medium);
+
+    box-shadow: var(--shadow-medium);
+
+    overflow: hidden;
+
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+
+    background: var(--callout-header-bg);
+
+    border-bottom: 1px solid var(--callout-border);
+
+    color: var(--callout-title);
+
+    font-weight: 600;
+
+    letter-spacing: .04em;
+
+}
+
+
+/* ----------------------------------------------------------
+   Research
+   ---------------------------------------------------------- */
+
+.md-typeset .admonition.research {
+
+    border-color: var(--state-research);
+
+}
+
+.md-typeset .research > .admonition-title {
+
+    color: var(--state-research);
+
+}
+
+.md-typeset .research > .admonition-title::before {
+
+    background-color: var(--state-research);
+
+}
+
+
+/* ----------------------------------------------------------
+   Implementation
+   ---------------------------------------------------------- */
+
+.md-typeset .admonition.implementation {
+
+    border-color: var(--state-info);
+
+}
+
+.md-typeset .implementation > .admonition-title {
+
+    color: var(--state-info);
+
+}
+
+.md-typeset .implementation > .admonition-title::before {
+
+    background-color: var(--state-info);
+
+}
+
+
+/* ----------------------------------------------------------
+   Approved
+   ---------------------------------------------------------- */
+
+.md-typeset .admonition.approved {
+
+    border-color: var(--state-success);
+
+}
+
+.md-typeset .approved > .admonition-title {
+
+    color: var(--state-success);
+
+}
+
+.md-typeset .approved > .admonition-title::before {
+
+    background-color: var(--state-success);
+
+}
+
+
+/* ----------------------------------------------------------
+   Console
+   ---------------------------------------------------------- */
+
+.md-typeset .admonition.console {
+
+    border-color: var(--state-warning);
+
+}
+
+.md-typeset .console > .admonition-title {
+
+    color: var(--state-warning);
+
+}
+
+.md-typeset .console > .admonition-title::before {
+
+    background-color: var(--state-warning);
+
+}
+
+
+/* ----------------------------------------------------------
+   Do Not
+   ---------------------------------------------------------- */
+
+.md-typeset .admonition.do-not {
+
+    border-color: var(--state-critical);
+
+}
+
+.md-typeset .do-not > .admonition-title {
+
+    color: var(--state-critical);
+
+}
+
+.md-typeset .do-not > .admonition-title::before {
+
+    background-color: var(--state-critical);
+
+}
+
+
+
+/* ==========================================================
+   TABLES
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   Standard Table
+   ---------------------------------------------------------- */
+
+.md-typeset table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: var(--surface-primary);
+
+    border: 1px solid var(--border-subtle);
+
+    border-radius: var(--radius-medium);
+
+    overflow: hidden;
+
+}
+
+.md-typeset th {
+
+    background: var(--surface-secondary);
+
+    color: var(--heading-accent);
+
+    font-weight: 600;
+
+    text-align: left;
+
+}
+
+.md-typeset td {
+
+    color: var(--text-primary);
+
+}
+
+.md-typeset th,
+.md-typeset td {
+
+    padding: .85rem 1rem;
+
+    border-bottom: 1px solid var(--border-subtle);
+
+}
+
+.md-typeset tr:last-child td {
+
+    border-bottom: none;
+
+}
+
+
+/* ----------------------------------------------------------
+   Responsive Table
+   ---------------------------------------------------------- */
+
+/*
+Reserved.
+*/
+
+
+/* ----------------------------------------------------------
+   Comparison Table
+   ---------------------------------------------------------- */
+
+/*
+Reserved.
+*/
+
+
+
+/* ==========================================================
+   CALLOUTS
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   Block Quotes
+   ---------------------------------------------------------- */
+
+.md-typeset blockquote {
+
+    background: var(--surface-secondary);
+
+    border-left: 4px solid var(--heading-accent);
+
+    border-radius: var(--radius-medium);
+
+    padding: 1rem 1.5rem;
+
+    margin: 2rem 0;
+
+}
+
+.md-typeset blockquote p {
+
+    color: var(--text-primary);
+
+    font-style: italic;
+
+    margin: 0;
+
+}
+
+.md-typeset blockquote a {
+
+    color: var(--interactive);
+
+}
+
+
+
+/* ==========================================================
+   IMAGES
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   Images
+   ---------------------------------------------------------- */
+
+.md-typeset img {
+
+    border-radius: var(--radius-medium);
+
+    border: 1px solid var(--border-subtle);
+
+    box-shadow: var(--shadow-small);
+
+}
+
+
+/* ----------------------------------------------------------
+   Figure
+   ---------------------------------------------------------- */
+
+.md-typeset figure {
+
+    margin: 2rem auto;
+
+    text-align: center;
+
+}
+
+
+/* ----------------------------------------------------------
+   Caption
+   ---------------------------------------------------------- */
+
+.md-typeset figcaption {
+
+    color: var(--text-muted);
+
+    font-size: .85rem;
+
+    margin-top: .75rem;
+
+    font-style: italic;
+
+}
+
+
+
+/* ==========================================================
+   METADATA
+   ========================================================== */
+
+/* ----------------------------------------------------------
+   Tags
+   ---------------------------------------------------------- */
+
+/* ----------------------------------------------------------
+   Labels
+   ---------------------------------------------------------- */
+
+/* ----------------------------------------------------------
+   Badges
+   ---------------------------------------------------------- */
+
+/* ----------------------------------------------------------
+   Metadata Rows
+   ---------------------------------------------------------- */
+
+/* ----------------------------------------------------------
+   Dates
+   ---------------------------------------------------------- */
+
+/* ----------------------------------------------------------
+   Authors
+   ---------------------------------------------------------- */
+
+
+   
+/* ==========================================================
+   REUSABLE UI
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   Divider
+   ---------------------------------------------------------- */
+
+.md-typeset hr {
+
+    border: none;
+
+    height: 1px;
+
+    background: linear-gradient(
+        to right,
+        transparent,
+        var(--heading-accent),
+        transparent
+    );
+
+    margin: 3rem 0;
+
+    opacity: .45;
+
+}
+
+
+/* ----------------------------------------------------------
+   Code Blocks
+   ---------------------------------------------------------- */
+
+.md-typeset pre {
+
+    background: var(--surface-secondary);
+
+    border: 1px solid var(--border-subtle);
+
+    border-radius: var(--radius-medium);
+
+    box-shadow: var(--shadow-small);
+
+}
+
+.md-typeset pre code {
+
+    color: var(--text-primary);
+
+}
+
+.md-typeset code {
+
+    background: var(--code-inline-bg);
+
+    color: var(--heading-accent);
+
+    border-radius: var(--radius-small);
+
+    padding: .15rem .35rem;
+
+}
+
+
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   Footer
+   ---------------------------------------------------------- */
+
+.sc-footer {
+
+    padding: 4rem 0;
+
+}
+
+.sc-footer__main {
+
+    display: grid;
+
+    grid-template-columns: 1fr auto;
+
+    gap: var(--space-2xl);
+
+    align-items: start;
+
+}
+
+.sc-footer__columns {
+
+    display: grid;
+
+    grid-auto-flow: column;
+
+    grid-auto-columns: max-content;
+
+    gap: var(--space-2xl);
+
+}
+
+.sc-footer__bottom {
+
+    margin-top: var(--space-2xl);
+
+    padding-top: var(--space-lg);
+
+    border-top: 1px solid var(--border-subtle);
+
+    text-align: center;
+
+}
+
+
+/* ----------------------------------------------------------
+   GitHub Button
+   ---------------------------------------------------------- */
+
+.sc-github-button {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: .5rem;
+
+    padding: .5rem .75rem;
+
+}

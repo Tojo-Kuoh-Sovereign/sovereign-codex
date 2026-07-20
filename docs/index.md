@@ -15,12 +15,12 @@ template: home.html
             <header class="hero-header">
 
                 <p class="hero-kicker">
-                    Transform information into trusted knowledge.
+                    Transforming Information into Trusted Knowledge
                 </p>
 
                 <img
                     class="hero-logo"
-                    src="assets/10-branding/sovereign-mark-master.svg"
+                    src="assets/branding/sovereign-mark-master.svg"
                     alt="Sovereign Codex Phoenix">
 
                 <h1 class="hero-title">
@@ -32,7 +32,7 @@ template: home.html
             <div class="hero-body">
 
                 <p class="hero-subtitle">
-                    Governance, Structure, and Intelligent Tools<br>
+                    Governance, research and intelligent tools
                     for the Black Desert Console community.
                 </p>
 
@@ -40,11 +40,11 @@ template: home.html
 
             <footer class="hero-actions">
 
-                <a class="hero-button hero-button-primary" href="#">
+                <a class="hero-button hero-button-primary" href="/documentation/">
                     Explore the Codex
                 </a>
 
-                <a class="hero-button hero-button-secondary" href="#">
+                <a class="hero-button hero-button-secondary" href="/about/">
                     Learn More
                 </a>
 
@@ -56,85 +56,97 @@ template: home.html
 
 
     <!-- ======================================================
-         EXPLORE
+         DISCOVERY
     ======================================================= -->
 
-    <section id="homepage-explore">
+    <section id="homepage-discovery">
 
-        <div class="knowledge-areas__content">
+        <div class="homepage-discovery__content">
 
-            <header class="knowledge-areas__header">
+            <header class="homepage-discovery__header">
 
-                <h2>Explore the Codex</h2>
+                <h2>
+                    Explore Sovereign Codex
+                </h2>
 
                 <p>
-                    Browse every part of Sovereign Codex, from governance and research
-                    to practical guides and technical documentation.
+                    Browse governance, research, documentation and development
+                    as a connected knowledge platform.
                 </p>
 
             </header>
 
-            <div class="knowledge-areas__grid">
+            <div class="homepage-discovery__grid">
 
                 <a class="knowledge-card" href="/governance/">
 
-                <div class="knowledge-card__icon">
-                🏛
-                </div>
+                    <div class="knowledge-card__icon">
+                        🏛
+                    </div>
 
-                <h3 class="knowledge-card__title">
-                Governance
-                </h3>
+                    <h3 class="knowledge-card__title">
+                        Governance
+                    </h3>
 
-                <p class="knowledge-card__description">
-                Standards, frameworks and policies that ensure every piece of knowledge remains accurate, consistent and trustworthy.
-                </p>
+                    <p class="knowledge-card__description">
+                        Standards, policies and governance frameworks that
+                        ensure knowledge remains accurate, transparent and
+                        maintainable.
+                    </p>
+
+                </a>
+
 
                 <a class="knowledge-card" href="/knowledge/">
 
-                <div class="knowledge-card__icon">
-                📚
-                </div>
+                    <div class="knowledge-card__icon">
+                        📚
+                    </div>
 
-                <h3 class="knowledge-card__title">
-                Knowledge
-                </h3>
+                    <h3 class="knowledge-card__title">
+                        Knowledge
+                    </h3>
 
-                <p class="knowledge-card__description">
-                Practical guides, reference material and documentation designed for the Black Desert Console community.
-                </p>
+                    <p class="knowledge-card__description">
+                        Practical guides, reference material and structured
+                        documentation for the Black Desert Console community.
+                    </p>
 
                 </a>
+
 
                 <a class="knowledge-card" href="/research/">
 
-                <div class="knowledge-card__icon">
-                🔬
-                </div>
+                    <div class="knowledge-card__icon">
+                        🔬
+                    </div>
 
-                <h3 class="knowledge-card__title">
-                Research
-                </h3>
+                    <h3 class="knowledge-card__title">
+                        Research
+                    </h3>
 
-                <p class="knowledge-card__description">
-                Evidence registers, investigations and validated findings that support every published recommendation.
-                </p>
+                    <p class="knowledge-card__description">
+                        Evidence registers, investigations and validated
+                        findings supporting every published recommendation.
+                    </p>
 
                 </a>
 
+
                 <a class="knowledge-card" href="/roadmap/">
 
-                <div class="knowledge-card__icon">
-                🗺
-                </div>
+                    <div class="knowledge-card__icon">
+                        🗺
+                    </div>
 
-                <h3 class="knowledge-card__title">
-                Roadmap
-                </h3>
+                    <h3 class="knowledge-card__title">
+                        Roadmap
+                    </h3>
 
-                <p class="knowledge-card__description">
-                Explore upcoming milestones, planned features and the future direction of Sovereign Codex.
-                </p>
+                    <p class="knowledge-card__description">
+                        Discover upcoming milestones, planned features and
+                        the future direction of Sovereign Codex.
+                    </p>
 
                 </a>
 
@@ -151,73 +163,83 @@ template: home.html
 
     <section id="homepage-trust">
 
-        <div class="knowledge-areas__content">
+        <div class="homepage-trust__content">
 
-            <header class="knowledge-areas__header">
+            <header class="homepage-trust__header">
 
-                <h2>Explore the Codex</h2>
+                <h2>
+                    Knowledge You Can Trust
+                </h2>
 
                 <p>
-                    Browse every part of Sovereign Codex, from governance and research
-                    to practical guides and technical documentation.
+                    Every published article follows documented governance,
+                    transparent research practices and structured review
+                    processes designed to ensure knowledge remains accurate,
+                    maintainable and trustworthy.
                 </p>
 
             </header>
 
-            <div class="trust-areas__grid">
+            <div class="homepage-trust__grid">
 
-                <a class="trust-card" href="/Standards/">
+                <article class="trust-card">
 
-                <div class="trust-card__icon">
-                🏛
-                </div>
+                    <div class="trust-card__icon">
+                        📖
+                    </div>
 
-                <h3 class="trust-card__title">
-                Standards
-                </h3>
+                    <h3 class="trust-card__title">
+                        Standards
+                    </h3>
 
-                <p class="trust-card__description">
-                Knowledge follows documented standards, structured review processes, and transparent governance.
-                </p>
+                    <p class="trust-card__description">
+                        Every document follows established governance,
+                        documentation and presentation standards.
+                    </p>
 
-                <a class="trust-card" href="/Research/">
+                </article>
 
-                <div class="trust-card__icon">
-                📚
-                </div>
 
-                <h3 class="trust-card__title">
-                Evidence Based
-                </h3>
+                <article class="trust-card">
 
-                <p class="trust-card__description">
-                Research, evidence and validation support every published principle, and recommendation.
-                </p>
+                    <div class="trust-card__icon">
+                        🔬
+                    </div>
 
-                </a>
+                    <h3 class="trust-card__title">
+                        Evidence Based
+                    </h3>
 
-                <a class="trust-card" href="/documentation/">
+                    <p class="trust-card__description">
+                        Research, evidence and validation underpin every
+                        recommendation and implementation.
+                    </p>
 
-                <div class="trust-card__icon">
-                🔬
-                </div>
+                </article>
 
-                <h3 class="trust-card__title">
-                Maintained
-                </h3>
 
-                <p class="trust-card__description">
-                Documentation is reviewed, refined and updated as the game and community evolve.
-                </p>
+                <article class="trust-card">
 
-                </a>
+                    <div class="trust-card__icon">
+                        🔄
+                    </div>
 
+                    <h3 class="trust-card__title">
+                        Maintained
+                    </h3>
+
+                    <p class="trust-card__description">
+                        Documentation is continuously reviewed and refined
+                        as knowledge evolves.
+                    </p>
+
+                </article>
 
             </div>
 
         </div>
 
-    </section> 
+    </section>
 
 
     <!-- ======================================================
@@ -226,27 +248,61 @@ template: home.html
 
     <section id="homepage-stats">
 
-        <div class="stats-content">
+        <div class="homepage-stats__content">
 
-            <header class="stats-header">
+            <header class="homepage-stats__header">
 
-                <h2>The Codex at a Glance</h2>
+                <h2>
+                    The Codex at a Glance
+                </h2>
 
                 <p>
-                    Building trusted knowledge is an ongoing effort.
-
-                    Growing Governance Framework
-
-                    Active Research Programme
-
-                    Expanding Knowledge Library
+                    Sovereign Codex is continually expanding through
+                    governance, research and community-driven knowledge.
                 </p>
 
             </header>
 
+            <div class="homepage-stats__grid">
+
+                <!-- Future statistics -->
+
             </div>
 
         </div>
+
+    </section>
+
+
+    <!-- ======================================================
+         FEATURED CONTENT
+    ======================================================= -->
+
+    <section id="homepage-featured">
+
+        <!-- Reserved for future implementation -->
+
+    </section>
+
+
+    <!-- ======================================================
+         COMMUNITY
+    ======================================================= -->
+
+    <section id="homepage-community">
+
+        <!-- Reserved for future implementation -->
+
+    </section>
+
+
+    <!-- ======================================================
+         CALL TO ACTION
+    ======================================================= -->
+
+    <section id="homepage-cta">
+
+        <!-- Reserved for future implementation -->
 
     </section>
 

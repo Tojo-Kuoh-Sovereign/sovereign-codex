@@ -1,1 +1,0 @@
-Overall emotional response

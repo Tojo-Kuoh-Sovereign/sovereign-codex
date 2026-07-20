@@ -1,0 +1,257 @@
+/* ==========================================================
+   BASE
+   Sovereign Documentation Framework
+
+   Purpose
+   -------
+   Defines the foundational design language for the
+   Sovereign Documentation Framework.
+
+   This file contains:
+
+   • Design Tokens
+   • Global Browser Behaviour
+   • Foundation Styles
+
+   Foundation materials should never be referenced
+   outside this file.
+
+   Lower-level stylesheets should consume semantic
+   and component tokens rather than redefining colours,
+   spacing, motion, or component foundations.
+
+   ========================================================== */
+
+:root {
+
+    color-scheme: dark;
+
+    /* ==========================================================
+       MATERIAL PALETTE
+       ========================================================== */
+
+    /* Obsidian */
+
+    --obsidian: #1b1d24;
+    --obsidian-light: #252833;
+
+    /* Steel */
+
+    --steel: #4f5562;
+    --steel-light: #717887;
+
+    /* Bronze */
+
+    --bronze: #8f7653;
+    --bronze-light: #b59873;
+
+    /* Sapphire */
+
+    --sapphire: #3f6fb4;
+    --sapphire-light: #5f93dd;
+
+    /* Paper */
+
+    --paper: #e7dfd2;
+
+
+    /* ==========================================================
+       SEMANTIC TOKENS
+       ========================================================== */
+
+    /* Surfaces */
+
+    --surface-primary: var(--obsidian);
+    --surface-secondary: var(--obsidian-light);
+    --surface-tertiary: rgba(255, 255, 255, .03);
+
+    /* Typography */
+
+    --text-primary: var(--paper);
+    --text-secondary: var(--steel-light);
+    --text-muted: var(--steel-light);
+
+    /* Headings */
+
+    --heading-primary: var(--paper);
+    --heading-accent: var(--bronze);
+
+    /* Borders */
+
+    --border-subtle: rgba(143, 118, 83, .18);
+    --border-strong: rgba(143, 118, 83, .35);
+
+    /* Interaction */
+
+    --interactive: var(--sapphire);
+    --interactive-hover: var(--bronze-light);
+    --interactive-active: var(--bronze);
+
+    /* Elevation */
+
+    --shadow-small: 0 2px 8px rgba(0, 0, 0, .15);
+    --shadow-medium: 0 8px 24px rgba(0, 0, 0, .20);
+    --shadow-large: 0 18px 48px rgba(0, 0, 0, .35);
+
+    /* Shape */
+
+    --radius-small: 4px;
+    --radius-medium: 8px;
+    --radius-large: 16px;
+
+    /* Spacing */
+
+    --space-2xs: .125rem;
+    --space-xs: .25rem;
+    --space-sm: .5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+
+    /* Motion */
+
+    --motion-fast: 120ms;
+    --motion-normal: 200ms;
+    --motion-slow: 350ms;
+
+    --ease-standard: ease;
+
+
+    /* ==========================================================
+       COMPONENT TOKENS
+       ========================================================== */
+
+    /* Callouts */
+
+    --callout-bg: var(--surface-primary);
+    --callout-header-bg: rgba(143, 118, 83, .08);
+    --callout-border: var(--border-subtle);
+    --callout-title: var(--heading-accent);
+
+    /* Cards */
+
+    --card-bg: var(--surface-primary);
+    --card-border: var(--border-subtle);
+
+    /* Panels */
+
+    --panel-bg: var(--surface-secondary);
+
+    /* Scrollbars */
+
+    --scrollbar-thumb: var(--steel);
+    --scrollbar-thumb-hover: var(--bronze);
+
+    /* Buttons */
+
+    --button-primary-hover-bg: rgba(63, 111, 180, .08);
+    --button-primary-hover-text: var(--paper);
+
+    --button-secondary-hover-bg: rgba(143, 118, 83, .08);
+    --button-secondary-hover-text: var(--paper);
+
+    /* Inline Code */
+
+    --code-inline-bg: var(--surface-tertiary);
+
+
+    /* ==========================================================
+       STATE TOKENS
+       ========================================================== */
+
+    /* Information */
+
+    --state-info: var(--sapphire);
+
+    /* Success */
+
+    --state-success: #4d8f62;
+
+    /* Warning */
+
+    --state-warning: #c49b3d;
+
+    /* Critical */
+
+    --state-critical: #b04d4d;
+
+    /* Research */
+
+    --state-research: #8b72c6;
+
+
+    /* ==========================================================
+       ACCESSIBILITY TOKENS
+       ========================================================== */
+
+    --focus-ring: var(--interactive);
+    --focus-ring-width: 2px;
+    --focus-ring-offset: 2px;
+
+    --selection-bg: rgba(63, 111, 180, .25);
+    --selection-text: var(--paper);
+
+}
+
+
+/* ==========================================================
+   GLOBAL BEHAVIOUR
+
+   Purpose
+
+   Defines browser-level behaviour shared across the
+   entire Sovereign Documentation Framework.
+
+   This section should only contain global browser
+   behaviour and never component styling.
+
+   Related Document
+
+   Architecture → Design System
+   ========================================================== */
+
+* {
+
+    scrollbar-width: thin;
+
+    scrollbar-color:
+        var(--scrollbar-thumb)
+        transparent;
+
+}
+
+.md-sidebar__scrollwrap:hover,
+.md-sidebar__scrollwrap:focus-within {
+
+    scrollbar-color:
+        var(--scrollbar-thumb-hover)
+        transparent;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: var(--scrollbar-thumb);
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: var(--scrollbar-thumb-hover);
+
+}
+
+::selection {
+
+    background: var(--selection-bg);
+    color: var(--selection-text);
+
+}
+
+:focus-visible {
+
+    outline: var(--focus-ring-width) solid var(--focus-ring);
+    outline-offset: var(--focus-ring-offset);
+
+}

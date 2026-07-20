@@ -1,63 +1,69 @@
 # Governance
 
-Governance provides the strategic foundation of the Sovereign Documentation Framework.
+Governance establishes the principles, responsibilities, and decision-making framework that guide the Sovereign Documentation Framework.
 
-It establishes the philosophies, models, principles, and decision-making processes that guide the long-term development of the Sovereign Codex.
+Rather than defining individual implementation details, Governance provides the long-term direction that ensures the Sovereign Codex remains accurate, consistent, trustworthy, and maintainable as it evolves.
 
-The purpose of Governance is not to restrict progress, but to provide a consistent framework that enables the project to grow with confidence while maintaining quality, transparency, and trust.
+Every document within this section contributes to a coherent governance system that supports research, standards, design, quality, and knowledge.
 
 ---
 
-## Governance Structure
+## Purpose
 
-The Governance section is organised into the following statements:
+Governance exists to ensure that documentation is created deliberately rather than accidentally.
+
+It provides a shared foundation for making decisions, evaluating change, maintaining quality, and preserving the long-term vision of the Sovereign Documentation Framework.
+
+---
+
+## Governance Framework
+
+The Governance section is organised into several complementary disciplines.
 
 ### Vision
 
-Defines the long-term direction and purpose of the Sovereign Documentation Framework.
-
----
+Defines the long-term purpose and direction of the Sovereign Documentation Framework.
 
 ### Governance Model
 
-Describes how Governance is organised and how its components relate to one another.
-
----
+Defines how governance operates and how responsibilities are distributed throughout the framework.
 
 ### Research Philosophy
 
-Defines the beliefs that guide research throughout the framework.
+Establishes how knowledge should be investigated, evaluated, and validated before publication.
 
----
+### Knowledge Presentation
 
-### Knowledge Presentation Principles
-
-Establishes the enduring principles for communicating knowledge.
-
----
+Defines the principles that govern how knowledge should be communicated to readers.
 
 ### Decision Framework
 
-Provides a consistent approach for evaluating significant decisions.
-
----
+Provides a structured approach for evaluating changes throughout the framework.
 
 ### Continuous Improvement
 
-Defines how the framework evolves through evidence, experience, and deliberate refinement.
-
----
+Defines how the framework evolves responsibly over time.
 
 ### Architecture
 
-Describes how the components of the Sovereign Documentation Framework fit together as a coherent system.
+Defines the structural relationships that organise the Sovereign Documentation Framework.
 
 ---
 
-## Governance in Practice
+## Relationships
 
-Together, these statements form the constitutional foundation of the Sovereign Documentation Framework.
+Governance provides the foundation for:
 
-They guide the development of Research, Standards, Design, Quality, Knowledge, and future intelligent tools while remaining stable, evidence-informed, and open to continuous improvement.
+- Research
+- Standards
+- Design
+- Quality
+- Knowledge
 
-For the official position on each governance topic, refer to the corresponding **Statement** within that section.
+Together these disciplines transform information into trusted knowledge.
+
+---
+
+## Guiding Principle
+
+> Governance exists to preserve trust through deliberate, evidence-informed decision making.
