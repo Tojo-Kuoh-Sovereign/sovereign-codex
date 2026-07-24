@@ -222,7 +222,7 @@ This is a sentence.[^1]
 
 # Images
 
-![Example](../96-assets/images/example.png)
+![Example](docs\assets\branding\logo.png)
 
 ---
 
