@@ -1,0 +1,15 @@
+<div class="sc-repository">
+    <a href="{{ config.repo_url }}">
+
+        {% set icon = config.theme.icon.repo or "fontawesome/brands/github" %}
+
+        <div class="sc-repository__icon">
+            {% include ".icons/" ~ icon ~ ".svg" %}
+        </div>
+
+        <span class="sc-repository__name">
+            {{ config.repo_name }}
+        </span>
+
+    </a>
+</div>

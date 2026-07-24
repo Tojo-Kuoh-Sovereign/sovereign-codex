@@ -20,12 +20,12 @@
 # ==========================================================
 
 site_name: Sovereign Codex
-site_url: https://tojo-kuoh-sovereign.github.io/sovereign-codex/
+site_url: https://sovereignbdc.github.io/sovereign-codex/
 site_description: Trusted knowledge through governance, structure, and intelligent tools.
 site_author: Tojo Kuoh
 
 repo_name: Sovereign Codex
-repo_url: https://github.com/Tojo-Kuoh-Sovereign/sovereign-codex
+repo_url: https://github.com/SovereignBDC/sovereign-codex
 
 edit_uri: ""
 
@@ -159,8 +159,8 @@ nav:
   - Knowledge:
       - Overview: 30-knowledge/index.md
 
-  - Roadmap:
-      - Overview: 40-roadmap/index.md
-
   - Projects:
       - Overview: 50-projects/index.md
+
+  - Roadmap:
+      - Overview: 40-roadmap/index.md

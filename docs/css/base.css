@@ -117,6 +117,14 @@
 
     --ease-standard: ease;
 
+    /* Links */
+
+    --link-primary: var(--interactive);
+    --link-primary-hover: var(--interactive-hover);
+
+    --link-subtle: var(--text-secondary);
+    --link-subtle-hover: var(--text-primary);
+
 
     /* ==========================================================
        COMPONENT TOKENS

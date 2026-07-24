@@ -47,9 +47,93 @@ Owns maximum readable width.
    Content Container
    ---------------------------------------------------------- */
 
-/*
-Constrains documentation content.
-*/
+.sc-footer {
+
+    padding-block: var(--space-2xl);
+
+}
+
+.sc-footer__content {
+
+    max-width: 1200px;
+
+    margin-inline: auto;
+
+    padding-inline: var(--space-lg);
+
+}
+
+.sc-footer__main {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: var(--space-2xl);
+
+}
+
+.sc-footer__bottom {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: var(--space-2xl);
+
+    padding-top: var(--space-lg);
+
+    border-top: 1px solid var(--border-subtle);
+
+}
+
+.sc-footer__navigation {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, max-content);
+
+    gap: var(--space-2xl);
+
+}
+
+.sc-footer__column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-sm);
+
+}
+
+.sc-footer__column h3 {
+
+    margin: 0 0 var(--space-sm);
+
+}
+
+.sc-footer__column a {
+
+    color: var(--link-subtle);
+
+    text-decoration: none;
+
+    transition:
+        color var(--motion-fast);
+
+}
+
+.sc-footer__column a:hover,
+.sc-footer__column a:focus-visible {
+
+    color: var(--link-subtle-hover);
+
+}
 
 
 /* ----------------------------------------------------------

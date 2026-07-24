@@ -42,7 +42,7 @@
 
     align-items: center;
 
-    min-height: 100vh;
+    min-height: calc(100vh - var(--header-height));
 
 }
 
@@ -50,10 +50,12 @@
 /* ----------------------------------------------------------
    Hero Content
    ---------------------------------------------------------- */
+   /* Hero intentionally uses a narrower reading width than
+   the content sections below. */
 
 .hero-content {
 
-    max-width: 900px;
+    max-width: 800px;
 
     text-align: center;
 
@@ -100,7 +102,7 @@
 
     margin-bottom: 1rem;
 
-    font-size: .8rem;
+    font-size: var(--font-size-sm);
 
     letter-spacing: .25rem;
 
@@ -119,9 +121,9 @@
 
     margin-bottom: 1rem;
 
-    font-size: clamp(3rem, 6vw, 5rem);
+    font-size: var(--font-size-4xl);
 
-    font-weight: 800;
+    font-weight: 300;
 
 }
 
@@ -136,7 +138,7 @@
 
     margin: 0 auto;
 
-    font-size: 1.25rem;
+    font-size: var(--font-size-xl);
 
     opacity: .85;
 
@@ -179,7 +181,7 @@
 
     display: inline-block;
 
-    padding: .8rem 1.6rem;
+    padding: 1rem 2rem;
 
     text-decoration: none;
 
@@ -253,15 +255,20 @@
    Discovery Content
    ---------------------------------------------------------- */
 
-.knowledge-areas {
+.homepage-discovery {
 
 }
 
-.knowledge-areas__content {
-
+.homepage-discovery__content {
+    max-width: var(--page-width);
+    margin-inline: auto;
+    padding-inline: var(--space-xl);
 }
 
-.knowledge-areas__header {
+.homepage-discovery__header {
+    text-align: center;
+
+    margin-bottom: var(--space-2xl);
 
 }
 
@@ -270,13 +277,29 @@
    Discovery Grid
    ---------------------------------------------------------- */
 
-.knowledge-areas__grid {
+.homepage-discovery__grid {
 
     display: grid;
 
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
 
     gap: var(--space-xl);
+
+}
+
+@media (max-width: 1100px) {
+
+    .homepage-discovery__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .homepage-discovery__grid {
+        grid-template-columns: 1fr;
+    }
 
 }
 
@@ -293,9 +316,11 @@
 
     gap: var(--space-md);
 
-    padding: var(--space-md);
+    padding: var(--space-lg);
 
     background: var(--surface-secondary);
+
+    height: 100%;
 
     border: 1px solid var(--interactive);
 
@@ -326,7 +351,9 @@
 
 .knowledge-card__icon {
 
-    font-size: 1.7rem;
+    color: var(--header-accent);
+
+    font-size: var(--font-size-3xl);
 
     line-height: 1;
 
@@ -336,136 +363,21 @@
 
     margin: 0;
 
-    font-size: 1.4rem;
+    font-size: var(--font-size-lg);
 
-    font-weight: 600;
+    font-weight: 500;
 
 }
 
-.knowledge-card__description {
-
-    margin: 0;
-
-    line-height: 1.6;
+.md-typeset .knowledge-card__description {
 
     color: var(--text-muted);
 
-}
+    font-size: var(--font-size-sm);
 
-
-
-/* ==========================================================
-   TRUST
-   ========================================================== */
-
-
-/* ----------------------------------------------------------
-   Trust Section
-   ---------------------------------------------------------- */
-
-#homepage-trust {
+    line-height: 1.7;
 
 }
-
-.trust-areas {
-
-}
-
-.trust-areas__content {
-
-}
-
-.trust-areas__header {
-
-}
-
-
-/* ----------------------------------------------------------
-   Trust Grid
-   ---------------------------------------------------------- */
-
-.trust-areas__grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-
-    gap: var(--space-xl);
-
-}
-
-
-/* ----------------------------------------------------------
-   Trust Cards
-   ---------------------------------------------------------- */
-
-.trust-card {
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: var(--space-md);
-
-    padding: var(--space-md);
-
-    background: var(--surface-secondary);
-
-    border: 1px solid var(--interactive);
-
-    border-radius: var(--radius-medium);
-
-    color: inherit;
-
-    text-decoration: none;
-
-    transition:
-        transform var(--motion-fast),
-        border-color var(--motion-normal),
-        box-shadow var(--motion-normal);
-
-}
-
-.trust-card:hover {
-
-    background: var(--button-secondary-hover-bg);
-
-    border-color: var(--border-subtle);
-
-    box-shadow: var(--shadow-medium);
-
-    transform: translateY(-2px);
-
-}
-
-.trust-card__icon {
-
-    font-size: 1.7rem;
-
-    line-height: 1;
-
-}
-
-.trust-card__title {
-
-    margin: 0;
-
-    font-size: 1.4rem;
-
-    font-weight: 600;
-
-}
-
-.trust-card__description {
-
-    margin: 0;
-
-    line-height: 1.6;
-
-    color: var(--text-muted);
-
-}
-
 
 
 /* ==========================================================
@@ -506,3 +418,25 @@ Reserved for future implementation.
 /*
 Reserved for future implementation.
 */
+
+/* ==========================================================
+   Homepage Layout Overrides
+   ----------------------------------------------------------
+   The landing page functions as a standalone experience
+   rather than a documentation page, so Material sidebars
+   are hidden.
+========================================================== */
+
+body:has(#homepage) .md-sidebar {
+    display: none;
+}
+
+#homepage section {
+    padding-block: var(--space-2xl);
+}
+
+.homepage-section {
+    max-width: var(--page-width);
+    margin-inline: auto;
+    padding-inline: var(--space-xl);
+}

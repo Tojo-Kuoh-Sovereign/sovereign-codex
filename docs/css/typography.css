@@ -28,6 +28,33 @@
    ========================================================== */
 
 
+/* ==========================================================
+   TYPOGRAPHY SCALE
+   ----------------------------------------------------------
+   Semantic font sizes used throughout the Sovereign
+   Documentation Framework.
+   ========================================================== */
+
+:root {
+
+    --font-size-xs: 0.75rem;
+
+    --font-size-sm: 0.875rem;
+
+    --font-size-base: 1rem;
+
+    --font-size-lg: 1.125rem;
+
+    --font-size-xl: 1.25rem;
+
+    --font-size-2xl: 1.5rem;
+
+    --font-size-3xl: 2rem;
+
+    --font-size-4xl: clamp(3rem, 6vw, 5rem);
+
+}
+
 
 /* ==========================================================
    HEADINGS
@@ -43,6 +70,8 @@
 .md-typeset h1 {
 
     color: var(--heading-primary);
+
+    font-size: var(--font-size-3xl);
 
     font-weight: 300;
 
@@ -60,6 +89,8 @@
 .md-typeset h2 {
 
     color: var(--heading-accent);
+
+    font-size: var(--font-size-2xl);
 
     font-weight: 500;
 
@@ -118,12 +149,16 @@ Reserved for future implementation.
 
     color: var(--text-primary);
 
+    font-size: var(--font-size-base);
+
 }
 
 .md-typeset p,
 .md-typeset li {
 
     color: var(--text-primary);
+
+    font-size: var(--font-size-base);
 
 }
 
