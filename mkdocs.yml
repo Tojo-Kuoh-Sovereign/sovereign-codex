@@ -66,11 +66,10 @@ theme:
 
     - navigation.instant
     - navigation.tabs
-    - navigation.sections
-    - navigation.expand
     - navigation.indexes
     - navigation.top
     - navigation.tracking
+    - navigation.path
 
     # Table of Contents
 
@@ -149,18 +148,3 @@ extra_css:
 # NAVIGATION
 # ==========================================================
 
-nav:
-
-  - Home: index.md
-
-  - Governance:
-      - Overview: 20-governance/index.md
-
-  - Knowledge:
-      - Overview: 30-knowledge/index.md
-
-  - Projects:
-      - Overview: 50-projects/index.md
-
-  - Roadmap:
-      - Overview: 40-roadmap/index.md
